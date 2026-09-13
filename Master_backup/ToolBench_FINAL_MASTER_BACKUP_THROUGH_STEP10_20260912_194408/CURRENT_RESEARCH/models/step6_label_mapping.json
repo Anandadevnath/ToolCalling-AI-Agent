@@ -1,0 +1,7 @@
+{
+  "0": "Intent Misunderstanding",
+  "1": "Wrong Tool Selection",
+  "2": "Parameter Hallucination",
+  "3": "Execution/Cascading Error",
+  "4": "No Failure"
+}

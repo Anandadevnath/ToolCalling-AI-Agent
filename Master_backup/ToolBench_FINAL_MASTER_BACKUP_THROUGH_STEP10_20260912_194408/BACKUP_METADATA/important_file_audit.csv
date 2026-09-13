@@ -1,0 +1,28 @@
+name,path,exists,size_bytes
+Step4 final 4000 CSV,/kaggle/working/toolbench_research/data/processed/step4_gptoss120b_target4000_FINAL.csv,True,49221539
+Step4 final 4000 Parquet,/kaggle/working/toolbench_research/data/processed/step4_gptoss120b_target4000_FINAL.parquet,True,13880515
+Step4 target sample,/kaggle/working/toolbench_research/data/processed/step4_target4000_sample.parquet,True,12062727
+Human Gold 300 CSV,/kaggle/working/toolbench_research/data/processed/step4_human_gold_FINAL_300.csv,True,6538084
+Human Gold 300 Parquet,/kaggle/working/toolbench_research/data/processed/step4_human_gold_FINAL_300.parquet,True,1778355
+Step6 train IDs,/kaggle/working/toolbench_research/results/tables/step6_train_ids_4000.csv,True,727810
+Step6 validation IDs,/kaggle/working/toolbench_research/results/tables/step6_validation_ids_4000.csv,True,151428
+Step6 test IDs,/kaggle/working/toolbench_research/results/tables/step6_test_ids_4000.csv,True,157482
+Step6 Human Gold IDs,/kaggle/working/toolbench_research/results/tables/step6_human_gold_ids_300.csv,True,83474
+Step7 failure rate,/kaggle/working/toolbench_research/results/tables/step7_failure_rate_by_depth_bootstrap_4000.csv,True,1980
+Step7 scaling models,/kaggle/working/toolbench_research/results/tables/step7_scaling_model_comparison_4000.csv,True,486
+Step9 ToolHop sample300,/kaggle/working/toolbench_research/data/processed/step9_toolhop_sample300.parquet,True,1494954
+Step9B ToolHop trajectories CSV,/kaggle/working/toolbench_research/data/processed/step9_toolhop_trajectories_FINAL_300.csv,False,0
+Step9B ToolHop trajectories Parquet,/kaggle/working/toolbench_research/data/processed/step9_toolhop_trajectories_FINAL_300.parquet,False,0
+Step9C annotations CSV,/kaggle/working/toolbench_research/data/processed/step9c_toolhop_failure_annotations_FINAL.csv,True,195679
+Step9C annotations Parquet,/kaggle/working/toolbench_research/data/processed/step9c_toolhop_failure_annotations_FINAL.parquet,True,71047
+Step9C labeled trajectories CSV,/kaggle/working/toolbench_research/data/processed/step9c_toolhop_trajectories_with_failure_labels.csv,True,2652091
+Step9C labeled trajectories Parquet,/kaggle/working/toolbench_research/data/processed/step9c_toolhop_trajectories_with_failure_labels.parquet,True,740450
+Step9D summary,/kaggle/working/toolbench_research/results/tables/step9d_cross_benchmark_summary.csv,True,977
+Step9D scaling models,/kaggle/working/toolbench_research/results/tables/step9d_cross_benchmark_scaling_model_comparison.csv,True,703
+Step9D curve similarity,/kaggle/working/toolbench_research/results/tables/step9d_cross_benchmark_curve_similarity.csv,True,363
+Step9D KS tests,/kaggle/working/toolbench_research/results/tables/step9d_cross_benchmark_ks_tests.csv,True,307
+Step9D failure rates,/kaggle/working/toolbench_research/results/tables/step9d_cross_benchmark_failure_rate_by_depth.csv,True,1601
+Step10 master findings,/kaggle/working/toolbench_research/results/step10_final/tables/step10_master_findings.csv,True,816
+Step10 final summary,/kaggle/working/toolbench_research/results/step10_final/STEP10_FINAL_RESEARCH_SUMMARY.md,True,3016
+Step10 figure index,/kaggle/working/toolbench_research/results/step10_final/tables/step10_figure_index.csv,True,1072
+Step10 output manifest,/kaggle/working/toolbench_research/results/step10_final/tables/step10_output_manifest.csv,True,1691

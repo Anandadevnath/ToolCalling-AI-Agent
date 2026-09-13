@@ -1,0 +1,26 @@
+cluster,failure_type,count,percent_within_cluster
+0,Intent Misunderstanding,28,29.166666666666668
+0,Wrong Tool Selection,19,19.791666666666664
+0,Parameter Hallucination,11,11.458333333333332
+0,Execution/Cascading Error,21,21.875
+0,No Failure,17,17.708333333333336
+1,Intent Misunderstanding,179,29.586776859504134
+1,Wrong Tool Selection,108,17.85123966942149
+1,Parameter Hallucination,104,17.1900826446281
+1,Execution/Cascading Error,189,31.239669421487605
+1,No Failure,25,4.132231404958678
+2,Intent Misunderstanding,147,26.063829787234045
+2,Wrong Tool Selection,85,15.070921985815602
+2,Parameter Hallucination,86,15.24822695035461
+2,Execution/Cascading Error,83,14.716312056737587
+2,No Failure,163,28.900709219858157
+3,Intent Misunderstanding,167,22.08994708994709
+3,Wrong Tool Selection,128,16.93121693121693
+3,Parameter Hallucination,144,19.047619047619047
+3,Execution/Cascading Error,234,30.952380952380953
+3,No Failure,83,10.978835978835978
+4,Intent Misunderstanding,13,15.476190476190476
+4,Wrong Tool Selection,19,22.61904761904762
+4,Parameter Hallucination,17,20.238095238095237
+4,Execution/Cascading Error,34,40.476190476190474
+4,No Failure,1,1.1904761904761905

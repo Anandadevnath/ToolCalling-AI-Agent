@@ -1,0 +1,2 @@
+benchmark,official_rows,research_sample,random_state,query_column,source_id_column,detected_depth_column,query_missing,official_source,trajectory_generation_complete,five_class_failure_annotation_complete,scaling_comparison_complete
+ToolHop,995,300,42,question,id,,0,https://huggingface.co/datasets/bytedance-research/ToolHop/resolve/main/data/ToolHop.json,False,False,False

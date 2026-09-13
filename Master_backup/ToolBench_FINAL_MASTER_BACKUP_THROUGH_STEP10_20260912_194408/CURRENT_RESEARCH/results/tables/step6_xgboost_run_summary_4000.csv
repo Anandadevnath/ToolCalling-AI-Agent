@@ -1,0 +1,2 @@
+final_gpt_labels,human_gold_rows,development_rows,initial_train_rows,validation_rows,llm_test_rows,final_train_plus_validation_rows,num_features,best_iteration,selected_n_estimators,best_validation_log_loss,selection_device,final_device,random_state,xgboost_version
+4000,300,3700,2590,555,555,3145,23,79,80,1.481376835677001,cuda,cuda,42,3.2.0

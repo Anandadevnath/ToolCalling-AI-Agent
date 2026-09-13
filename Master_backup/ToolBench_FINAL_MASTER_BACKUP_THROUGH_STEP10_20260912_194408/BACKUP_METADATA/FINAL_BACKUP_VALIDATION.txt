@@ -1,0 +1,44 @@
+Backup: ToolBench_FINAL_MASTER_BACKUP_THROUGH_STEP10_20260912_194408
+Created: 2026-09-12T19:44:21.624420+06:00
+
+Original source files : 60
+Copied source files   : 60
+Original research files: 274
+Copied research files  : 274
+✓ File-count comparison passed.
+
+IMPORTANT BACKUP FILE CHECK
+✓ SOURCE_MASTER_BACKUP/dataset/toolbench_train_80.parquet
+✓ SOURCE_MASTER_BACKUP/dataset/toolbench_validation_20.parquet
+✓ SOURCE_MASTER_BACKUP/featured/toolbench_train_80_features.parquet
+✓ SOURCE_MASTER_BACKUP/featured/toolbench_validation_20_features.parquet
+✓ CURRENT_RESEARCH/data/processed/step4_gptoss120b_target4000_FINAL.parquet
+✓ CURRENT_RESEARCH/data/processed/step4_human_gold_FINAL_300.parquet
+✓ CURRENT_RESEARCH/results/tables/step7_failure_rate_by_depth_bootstrap_4000.csv
+✓ CURRENT_RESEARCH/data/processed/step9c_toolhop_trajectories_with_failure_labels.parquet
+✓ CURRENT_RESEARCH/results/tables/step9d_cross_benchmark_summary.csv
+✓ CURRENT_RESEARCH/results/step10_final/STEP10_FINAL_RESEARCH_SUMMARY.md
+✓ CURRENT_RESEARCH/results/step10_final/tables/step10_master_findings.csv
+✓ CURRENT_RESEARCH/results/step10_final/tables/step10_output_manifest.csv
+
+ROW COUNT VALIDATION
+ToolBench train                 : 149,277 / expected 149,277
+ToolBench original validation   : 37,320 / expected 37,320
+Step4 final labels              : 4,000 / expected 4,000
+Human Gold                      : 300 / expected 300
+ToolHop Step9C                  : 300 / expected 300
+✓ Row-count validation passed.
+
+METHODOLOGY STATUS
+✓ Steps 1–10 completed.
+✓ ToolBench final taxonomy sample = 4,000.
+✓ Human Gold sample = 300.
+✓ ToolHop cross-benchmark sample = 300.
+✓ ToolBench best scaling model = Power Law.
+✓ ToolHop best scaling model = Power Law.
+✓ Step8 onset-persistence proxy limitation documented.
+✓ Human/LLM Kappa limitation documented.
+✓ Cross-benchmark depth-definition difference documented.
+✓ Original 37,320-row ToolBench validation split preserved.
+
+FINAL STATUS: PASS

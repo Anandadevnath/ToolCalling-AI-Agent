@@ -1,0 +1,2 @@
+human_gold_total,matched_trajectories,exact_matches,disagreements,raw_agreement,raw_agreement_percent,cohen_kappa,bootstrap_mean_kappa,bootstrap_ci_lower_95,bootstrap_ci_upper_95,bootstrap_iterations,seed
+300,300,122,178,0.4066666666666667,40.666666666666664,0.254491895740552,0.25394947905964543,0.19043174613142363,0.3203250062854362,5000,42

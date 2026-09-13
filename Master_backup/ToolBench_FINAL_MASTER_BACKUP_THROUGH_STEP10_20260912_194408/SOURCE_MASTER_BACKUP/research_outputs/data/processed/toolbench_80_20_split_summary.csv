@@ -1,0 +1,7 @@
+dataset,trajectories
+Original training,187542
+Original validation,762
+Original combined,188304
+Cleaned combined,186597
+New training 80%,149277
+New validation 20%,37320

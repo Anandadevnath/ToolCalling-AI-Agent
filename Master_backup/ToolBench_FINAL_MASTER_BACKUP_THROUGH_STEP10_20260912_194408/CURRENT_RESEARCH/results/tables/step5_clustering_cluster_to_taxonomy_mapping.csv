@@ -1,0 +1,6 @@
+cluster,cluster_size,majority_taxonomy_label,majority_count,cluster_purity
+0,96,Intent Misunderstanding,28,0.2916666666666667
+1,605,Execution/Cascading Error,189,0.31239669421487604
+2,564,No Failure,163,0.28900709219858156
+3,756,Execution/Cascading Error,234,0.30952380952380953
+4,84,Execution/Cascading Error,34,0.40476190476190477

@@ -1,0 +1,20 @@
+section,finding,value
+Failure Taxonomy,ToolBench labeled trajectories,4000
+Failure Taxonomy,ToolBench failure rate,86.22%
+Scaling,ToolBench best scaling model,Power Law
+Scaling,ToolBench ΔAIC,72.4484
+Propagation,Markov Macro-F1,0.8822
+Propagation,LSTM Macro-F1,0.4609
+Cross-Benchmark,ToolHop labeled trajectories,300
+Cross-Benchmark,ToolHop failure rate,73.67%
+Cross-Benchmark,ToolHop best scaling model,Power Law
+Cross-Benchmark,Curve similarity,0.8826
+Cross-Benchmark,Pearson r,0.8507
+Cross-Benchmark,Pearson p,0.003651
+Cross-Benchmark,Spearman rho,0.8008
+Cross-Benchmark,Spearman p,0.009508
+Cross-Benchmark,Failure-depth KS statistic,0.3995
+Cross-Benchmark,Failure-depth KS p-value,2.29511e-30
+Human Validation,Matched trajectories,300
+Human Validation,Exact agreement,40.67%
+Human Validation,Cohen Kappa,0.2545

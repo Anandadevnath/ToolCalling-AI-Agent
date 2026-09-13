@@ -1,0 +1,28 @@
+role_sequence,trajectory_count
+system -> user -> assistant,27785
+system -> user -> assistant -> function -> assistant,21392
+system -> user -> assistant -> function -> assistant -> function -> assistant,18605
+system -> user -> assistant -> function -> assistant -> function -> user -> assistant,12526
+system -> user -> assistant -> function -> user -> assistant,12481
+system -> user -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant,11305
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,9922
+system -> user -> user -> assistant,9526
+system -> user -> assistant -> function -> user -> assistant -> function -> assistant,8624
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant,8586
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant,8174
+system -> user -> user -> assistant -> function -> assistant,5719
+system -> user -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant,4939
+system -> user -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant,4917
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,4844
+system -> user -> user -> assistant -> function -> assistant -> function -> assistant,3700
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant,3410
+system -> user -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,2022
+system -> user -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,1904
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,1720
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant,961
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant,930
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant,686
+system -> user -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,675
+system -> user -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,514
+system -> user -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,292
+system -> user -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,105

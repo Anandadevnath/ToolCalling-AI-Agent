@@ -1,0 +1,2 @@
+benchmark,sample_size,failure_count,failure_rate,min_depth,max_depth,failure_rate_min_depth,failure_rate_max_depth,best_scaling_model,best_AIC,best_BIC,delta_AIC_vs_second
+ToolBench,4000,3449,0.86225,2,14,0.5598802395209581,0.9411764705882353,Power Law,216.08456371607147,228.67266299627556,72.44838260125422

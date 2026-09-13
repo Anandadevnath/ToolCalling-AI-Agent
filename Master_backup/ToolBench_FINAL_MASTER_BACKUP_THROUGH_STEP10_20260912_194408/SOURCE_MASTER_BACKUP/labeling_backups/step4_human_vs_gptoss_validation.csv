@@ -1,0 +1,41 @@
+annotation_id,human_failure_type,llm_failure_type,agreement
+TB_01784,Wrong Tool Selection,Wrong Tool Selection,True
+TB_00055,No Failure,Wrong Tool Selection,False
+TB_01210,No Failure,No Failure,True
+TB_00619,No Failure,No Failure,True
+TB_01344,No Failure,No Failure,True
+TB_02193,No Failure,No Failure,True
+TB_02326,Parameter Hallucination,Intent Misunderstanding,False
+TB_02225,No Failure,No Failure,True
+TB_00086,No Failure,No Failure,True
+TB_01264,Wrong Tool Selection,Wrong Tool Selection,True
+TB_02355,No Failure,Intent Misunderstanding,False
+TB_02581,Wrong Tool Selection,Intent Misunderstanding,False
+TB_02780,No Failure,No Failure,True
+TB_02863,No Failure,Wrong Tool Selection,False
+TB_00737,No Failure,Intent Misunderstanding,False
+TB_02644,No Failure,Parameter Hallucination,False
+TB_02285,No Failure,Parameter Hallucination,False
+TB_00157,No Failure,Wrong Tool Selection,False
+TB_02168,No Failure,Intent Misunderstanding,False
+TB_00227,Parameter Hallucination,Intent Misunderstanding,False
+TB_02965,No Failure,Intent Misunderstanding,False
+TB_00186,No Failure,No Failure,True
+TB_01371,No Failure,No Failure,True
+TB_00746,No Failure,No Failure,True
+TB_02165,No Failure,No Failure,True
+TB_01540,No Failure,No Failure,True
+TB_00038,Parameter Hallucination,Intent Misunderstanding,False
+TB_01059,No Failure,No Failure,True
+TB_00622,Execution/Cascading Error,Execution/Cascading Error,True
+TB_01192,Parameter Hallucination,Parameter Hallucination,True
+TB_02044,Execution/Cascading Error,Wrong Tool Selection,False
+TB_02259,Wrong Tool Selection,Wrong Tool Selection,True
+TB_02072,No Failure,No Failure,True
+TB_00064,Execution/Cascading Error,Wrong Tool Selection,False
+TB_01092,No Failure,No Failure,True
+TB_02301,Wrong Tool Selection,Wrong Tool Selection,True
+TB_02479,Wrong Tool Selection,Execution/Cascading Error,False
+TB_02814,Wrong Tool Selection,Wrong Tool Selection,True
+TB_02893,Intent Misunderstanding,Intent Misunderstanding,True
+TB_00708,Parameter Hallucination,No Failure,False

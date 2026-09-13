@@ -1,0 +1,1801 @@
+external_annotation_id,toolhop_id,step_depth,generation_status,termination_reason,forced_finalization,failure_type,failure_turn,confidence,reason,annotation_valid,annotation_error,annotation_model,annotation_runtime_seconds,raw_model_output
+TH_0001,TOOLHOP_0026476a20bf,5,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.98,"The assistant correctly interpreted the task, selected appropriate tools, provided valid parameters, and successfully computed the difference (8 - 7 = 1) without any errors.",True,,gpt-oss:120b-cloud,1.7798452377319336,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.98,
+  ""reason"": ""The assistant correctly interpreted the task, selected appropriate tools, provided valid parameters, and successfully computed the difference (8 - 7 = 1) without any errors.""
+}"
+TH_0002,TOOLHOP_00a8a5c3f7ba,8,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,7.0,0.96,"The assistant called extract_first_name with unsupported arguments (e.g., 'case_sensitive' and 'cultural_convention'), causing a TypeError. This indicates hallucinated/incorrect parameters.",True,,gpt-oss:120b-cloud,2.0247089862823486,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called extract_first_name with unsupported arguments (e.g., 'case_sensitive' and 'cultural_convention'), causing a TypeError. This indicates hallucinated/incorrect parameters.""
+}"
+TH_0003,TOOLHOP_00f7eea0d077,3,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant called publication_info_retriever with an unsupported value for 'publication_type' ('Magazine'), causing a tool error. This is an invalid parameter rather than a tool selection or execution issue.",True,,gpt-oss:120b-cloud,2.2009408473968506,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called publication_info_retriever with an unsupported value for 'publication_type' ('Magazine'), causing a tool error. This is an invalid parameter rather than a tool selection or execution issue.""
+}"
+TH_0004,TOOLHOP_01592d51db5a,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,2.0,0.96,"The assistant correctly selected the historical_bio_retriever tool with appropriate parameters, but the tool returned an error ('No data found'), causing the execution to fail early.",True,,gpt-oss:120b-cloud,2.2332844734191895,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant correctly selected the historical_bio_retriever tool with appropriate parameters, but the tool returned an error ('No data found'), causing the execution to fail early.""
+}"
+TH_0005,TOOLHOP_020c48773625,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.92,"The assistant called organization_founding_year_retriever with an unsupported organization_type ('association'), causing an immediate error. This indicates incorrect parameters were supplied.",True,,gpt-oss:120b-cloud,3.2091994285583496,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.92,
+  ""reason"": ""The assistant called organization_founding_year_retriever with an unsupported organization_type ('association'), causing an immediate error. This indicates incorrect parameters were supplied.""
+}"
+TH_0006,TOOLHOP_0313e644f8fd,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.96,"The appropriate tool (tv_series_info) returned an error at turn 3, and the assistant failed to recover, repeatedly calling tools that also failed and eventually fabricated an answer.",True,,gpt-oss:120b-cloud,3.0992705821990967,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The appropriate tool (tv_series_info) returned an error at turn 3, and the assistant failed to recover, repeatedly calling tools that also failed and eventually fabricated an answer.""
+}"
+TH_0007,TOOLHOP_0486ffb0d9c8,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.98,"The assistant correctly interpreted the query, used appropriate tool calls, provided valid parameters, handled the initial not-found response by adjusting the query, and produced the correct lowercase first letter of the character's last name.",True,,gpt-oss:120b-cloud,1.5168964862823486,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.98,
+  ""reason"": ""The assistant correctly interpreted the query, used appropriate tool calls, provided valid parameters, handled the initial not-found response by adjusting the query, and produced the correct lowercase first letter of the character's last name.""
+}"
+TH_0008,TOOLHOP_05a53e3696e2,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the author, retrieved the year he started working in France, and computed the product of its digits without any tool misuse or parameter errors.",True,,gpt-oss:120b-cloud,2.834465980529785,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the author, retrieved the year he started working in France, and computed the product of its digits without any tool misuse or parameter errors.""
+}"
+TH_0009,TOOLHOP_093f0b067a05,4,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,8.0,0.93,"The assistant correctly identified the case and retrieved the plaintiff's birth date, but the date_calculator tool was called with weeks: -5 to subtract five weeks yet returned a later date (1813-02-22) instead of an earlier one, indicating a failure in execution of the calculation.",True,,gpt-oss:120b-cloud,2.8838653564453125,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant correctly identified the case and retrieved the plaintiff's birth date, but the date_calculator tool was called with weeks: -5 to subtract five weeks yet returned a later date (1813-02-22) instead of an earlier one, indicating a failure in execution of the calculation.""
+}"
+TH_0010,TOOLHOP_09d66f6e5482,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the spouse, retrieved the correct death date, added one month using the appropriate date calculator, and provided the correct resulting date.",True,,gpt-oss:120b-cloud,1.4249069690704346,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the spouse, retrieved the correct death date, added one month using the appropriate date calculator, and provided the correct resulting date.""
+}"
+TH_0011,TOOLHOP_0ade7c2cf97f,9,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,10.0,0.97,"The assistant passed an invalid value for the 'output_format' argument to extract_first_name (""Array"" instead of a supported option), causing a tool error.",True,,gpt-oss:120b-cloud,2.5593667030334473,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 10,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant passed an invalid value for the 'output_format' argument to extract_first_name (\""Array\"" instead of a supported option), causing a tool error.""
+}"
+TH_0012,TOOLHOP_0b7f5ada6bdd,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the director (Jake Scott), retrieved his father (Ridley Scott), extracted the first name, and counted its syllables, with appropriate tool usage and valid parameters.",True,,gpt-oss:120b-cloud,1.3492896556854248,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the director (Jake Scott), retrieved his father (Ridley Scott), extracted the first name, and counted its syllables, with appropriate tool usage and valid parameters.""
+}"
+TH_0013,TOOLHOP_0b93caee71a9,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the performer (Art Brut), retrieved the lead vocalist (Eddie Argos), extracted the last name, and provided the answer without any misinterpretation, wrong tool use, parameter issues, or execution errors.",True,,gpt-oss:120b-cloud,1.3788049221038818,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the performer (Art Brut), retrieved the lead vocalist (Eddie Argos), extracted the last name, and provided the answer without any misinterpretation, wrong tool use, parameter issues, or execution errors.""
+}"
+TH_0014,TOOLHOP_0c0266790a98,8,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.96,"The assistant called genealogy_lookup with an unsupported relationship value ""self"", which is not among the allowed relationship types, causing a tool error.",True,,gpt-oss:120b-cloud,1.422050952911377,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called genealogy_lookup with an unsupported relationship value \""self\"", which is not among the allowed relationship types, causing a tool error.""
+}"
+TH_0015,TOOLHOP_11307768e6d7,9,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant called historical_relationship_finder with relationship_type ""paternal grandfather"", which is not a supported parameter value, causing the tool to return an invalid relationship type error.",True,,gpt-oss:120b-cloud,1.6280841827392578,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called historical_relationship_finder with relationship_type \""paternal grandfather\"", which is not a supported parameter value, causing the tool to return an invalid relationship type error.""
+}"
+TH_0016,TOOLHOP_1185401df4fc,3,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.96,"The assistant called award_recognition_year_finder with an invalid 'year_range' argument (empty list), which the tool rejected as malformed.",True,,gpt-oss:120b-cloud,2.296630620956421,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called award_recognition_year_finder with an invalid 'year_range' argument (empty list), which the tool rejected as malformed.""
+}"
+TH_0017,TOOLHOP_12b15c8db6c7,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,No Failure,,0.93,"The assistant correctly identified the founder, retrieved the birthplace using an appropriate tool, and provided the correct winter time zone offset (5 hours behind UTC). No misunderstanding, wrong tool, parameter issues, or execution errors are evident.",True,,gpt-oss:120b-cloud,2.0101370811462402,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant correctly identified the founder, retrieved the birthplace using an appropriate tool, and provided the correct winter time zone offset (5 hours behind UTC). No misunderstanding, wrong tool, parameter issues, or execution errors are evident.""
+}"
+TH_0018,TOOLHOP_12f0de3dc76e,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.92,"The agent selected appropriate tools, but the first tool call returned an error and the agent failed to recover, eventually providing an answer without evidence.",True,,gpt-oss:120b-cloud,2.2006492614746094,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.92,
+  ""reason"": ""The agent selected appropriate tools, but the first tool call returned an error and the agent failed to recover, eventually providing an answer without evidence.""
+}"
+TH_0019,TOOLHOP_135debd48370,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.8,"The assistant called historical_figure_info with an unsupported query_type value ""father"", which is not among the allowed types, resulting in an immediate tool error.",True,,gpt-oss:120b-cloud,2.1946468353271484,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.8,
+  ""reason"": ""The assistant called historical_figure_info with an unsupported query_type value \""father\"", which is not among the allowed types, resulting in an immediate tool error.""
+}"
+TH_0020,TOOLHOP_154a31bf7fa8,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified Timothy Shriver's father, retrieved the correct death date, subtracted one day using appropriate tools, and produced the correct answer.",True,,gpt-oss:120b-cloud,1.4261212348937988,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified Timothy Shriver's father, retrieved the correct death date, subtracted one day using appropriate tools, and produced the correct answer.""
+}"
+TH_0021,TOOLHOP_15a17abee2bf,5,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,3.0,0.8,"The film_metadata_query tool returned an incorrect director (Georges Lautner). Subsequent steps used this wrong information, leading to an invalid chain of queries and the final ASCII code answer.",True,,gpt-oss:120b-cloud,3.517962694168091,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.8,
+  ""reason"": ""The film_metadata_query tool returned an incorrect director (Georges Lautner). Subsequent steps used this wrong information, leading to an invalid chain of queries and the final ASCII code answer.""
+}"
+TH_0022,TOOLHOP_190c4a70068f,5,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the director, retrieved the mother’s name, counted vowels and consonants accurately, and produced the correct difference without any tool misuse or errors.",True,,gpt-oss:120b-cloud,2.4895131587982178,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the director, retrieved the mother’s name, counted vowels and consonants accurately, and produced the correct difference without any tool misuse or errors.""
+}"
+TH_0023,TOOLHOP_19187dc98dce,5,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"All tool calls correctly retrieve director, spouse, first name, last letter, and ASCII code, producing the correct answer.",True,,gpt-oss:120b-cloud,1.596060037612915,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""All tool calls correctly retrieve director, spouse, first name, last letter, and ASCII code, producing the correct answer.""
+}"
+TH_0024,TOOLHOP_19a448c01aa2,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the publisher (American Radio Relay League), retrieved its founding year (1914), and used the appropriate palindrome-finding tool with correct parameters, yielding the correct closest palindrome (1881). No misinterpretation, tool misuse, parameter errors, or execution issues are observed.",True,,gpt-oss:120b-cloud,1.4019677639007568,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the publisher (American Radio Relay League), retrieved its founding year (1914), and used the appropriate palindrome-finding tool with correct parameters, yielding the correct closest palindrome (1881). No misinterpretation, tool misuse, parameter errors, or execution issues are observed.""
+}"
+TH_0025,TOOLHOP_1a16327c0d87,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant called the appropriate tool but supplied incomplete/incorrect arguments, leading to a 'Missing required parameters' error on the first tool call.",True,,gpt-oss:120b-cloud,1.766531229019165,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called the appropriate tool but supplied incomplete/incorrect arguments, leading to a 'Missing required parameters' error on the first tool call.""
+}"
+TH_0026,TOOLHOP_1b0a69d74c5a,2,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant called screenwriter_finder with a film_titles list containing only one item, violating the tool's requirement for at least two items, leading to an error.",True,,gpt-oss:120b-cloud,1.9617252349853516,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called screenwriter_finder with a film_titles list containing only one item, violating the tool's requirement for at least two items, leading to an error.""
+}"
+TH_0027,TOOLHOP_1b4a364f76e9,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant called historical_figure_info with an empty time_period dictionary, which is malformed according to the tool's required format, leading to an immediate error.",True,,gpt-oss:120b-cloud,1.713045358657837,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called historical_figure_info with an empty time_period dictionary, which is malformed according to the tool's required format, leading to an immediate error.""
+}"
+TH_0028,TOOLHOP_1b75f1a8ff3b,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.97,"The appropriate tool (book_info_retriever) was called with reasonable parameters, but it returned an error ('Book not found'), and the assistant failed to recover, leading to a cascade of repeated failed calls.",True,,gpt-oss:120b-cloud,2.1317684650421143,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The appropriate tool (book_info_retriever) was called with reasonable parameters, but it returned an error ('Book not found'), and the assistant failed to recover, leading to a cascade of repeated failed calls.""
+}"
+TH_0029,TOOLHOP_1cc641954099,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,5.0,0.93,"The family_relationship_finder tool returned 'No data available' for the director's father, and the assistant repeatedly called the same tool without recovering, leading to a cascading execution failure.",True,,gpt-oss:120b-cloud,2.3477396965026855,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.93,
+  ""reason"": ""The family_relationship_finder tool returned 'No data available' for the director's father, and the assistant repeatedly called the same tool without recovering, leading to a cascading execution failure.""
+}"
+TH_0030,TOOLHOP_1d513c0bcbe3,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,5.0,0.97,"The assistant called biographical_data_retriever with an invalid 'source' argument (empty dict), causing the tool to return an error. This malformed parameter constitutes a Parameter Hallucination, observed at turn 5.",True,,gpt-oss:120b-cloud,1.7426867485046387,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called biographical_data_retriever with an invalid 'source' argument (empty dict), causing the tool to return an error. This malformed parameter constitutes a Parameter Hallucination, observed at turn 5.""
+}"
+TH_0031,TOOLHOP_1d57ccdb172a,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant called historical_figure_info_retriever with information_type set to ""basic"", which is not among the tool's allowed values, causing an unsupported parameter error.",True,,gpt-oss:120b-cloud,1.5221199989318848,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called historical_figure_info_retriever with information_type set to \""basic\"", which is not among the tool's allowed values, causing an unsupported parameter error.""
+}"
+TH_0032,TOOLHOP_1ecaebc17c51,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The artwork_creator_lookup tool returned an error (artwork not found) and the assistant continued to call the same failing tool without recovery, resulting in an unsupported final answer.",True,,gpt-oss:120b-cloud,2.195359468460083,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The artwork_creator_lookup tool returned an error (artwork not found) and the assistant continued to call the same failing tool without recovery, resulting in an unsupported final answer.""
+}"
+TH_0033,TOOLHOP_201921914960,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,4.0,0.85,"After the first genealogy_lookup returned no data, the assistant repeatedly called the same tool with minor name variations instead of handling the lack of result, leading to a cascade of identical failures and eventual forced finalization.",True,,gpt-oss:120b-cloud,2.252225637435913,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.85,
+  ""reason"": ""After the first genealogy_lookup returned no data, the assistant repeatedly called the same tool with minor name variations instead of handling the lack of result, leading to a cascade of identical failures and eventual forced finalization.""
+}"
+TH_0034,TOOLHOP_213483417380,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly retrieved the director, then correctly identified the father, and accurately computed the combined name length without any tool misuse or parameter errors.",True,,gpt-oss:120b-cloud,1.4318797588348389,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly retrieved the director, then correctly identified the father, and accurately computed the combined name length without any tool misuse or parameter errors.""
+}"
+TH_0035,TOOLHOP_22d200f8670d,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the author, retrieved the birth date, added 9 months, and produced the correct date without any tool misuse or errors.",True,,gpt-oss:120b-cloud,130.17344450950623,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the author, retrieved the birth date, added 9 months, and produced the correct date without any tool misuse or errors.""
+}"
+TH_0036,TOOLHOP_22ef9733f340,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Intent Misunderstanding,3.0,0.85,"The user asked for the co‑star opposite Billy Howle in an upcoming British drama directed by Dominic Cooke. The assistant retrieved a 2017 film (On Chesil Beach) that is not upcoming and does not feature Billy Howle, indicating a fundamental misunderstanding of the required upcoming, Billy‑Howle‑starring film.",True,,gpt-oss:120b-cloud,8.13782262802124,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.85,
+  ""reason"": ""The user asked for the co‑star opposite Billy Howle in an upcoming British drama directed by Dominic Cooke. The assistant retrieved a 2017 film (On Chesil Beach) that is not upcoming and does not feature Billy Howle, indicating a fundamental misunderstanding of the required upcoming, Billy‑Howle‑starring film.""
+}"
+TH_0037,TOOLHOP_25250e46745c,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.96,"The assistant called the correct tool (relationship_query) but supplied a malformed `data_source` argument, which the tool rejected as invalid.",True,,gpt-oss:120b-cloud,2.1705172061920166,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called the correct tool (relationship_query) but supplied a malformed `data_source` argument, which the tool rejected as invalid.""
+}"
+TH_0038,TOOLHOP_264bb3273d03,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,4.0,0.93,"The agent correctly selected the biographical_relationship_finder tool with appropriate parameters, but the tool returned an error ('No matching records found'), and the agent failed to recover, leading to repeated ineffective calls.",True,,gpt-oss:120b-cloud,4.124361515045166,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.93,
+  ""reason"": ""The agent correctly selected the biographical_relationship_finder tool with appropriate parameters, but the tool returned an error ('No matching records found'), and the agent failed to recover, leading to repeated ineffective calls.""
+}"
+TH_0039,TOOLHOP_278e89d8c2da,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant called genealogy_query with an unsupported relationship_type value ""paternal grandmother"", which is not among the allowed options, causing the tool error.",True,,gpt-oss:120b-cloud,1.993586778640747,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called genealogy_query with an unsupported relationship_type value \""paternal grandmother\"", which is not among the allowed options, causing the tool error.""
+}"
+TH_0040,TOOLHOP_27cfac714811,4,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,9.0,0.86,"The longest_alphabetical_substring tool returned an incorrect substring ('ar') which is not alphabetically consecutive, leading to an invalid result propagated to the final answer.",True,,gpt-oss:120b-cloud,6.41926646232605,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 9,
+  ""confidence"": 0.86,
+  ""reason"": ""The longest_alphabetical_substring tool returned an incorrect substring ('ar') which is not alphabetically consecutive, leading to an invalid result propagated to the final answer.""
+}"
+TH_0041,TOOLHOP_27e7efd0c42c,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The agent correctly interpreted the task, selected appropriate tools, provided valid parameters, and successfully obtained the sponsor, child, and syllable count without any observable errors.",True,,gpt-oss:120b-cloud,2.881603240966797,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The agent correctly interpreted the task, selected appropriate tools, provided valid parameters, and successfully obtained the sponsor, child, and syllable count without any observable errors.""
+}"
+TH_0042,TOOLHOP_290a52e4dd62,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The appropriate tool (movie_info_retriever) returns an error that the movie is not found, and the assistant repeatedly calls the same tool without recovery, indicating an execution failure.",True,,gpt-oss:120b-cloud,2.279844284057617,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The appropriate tool (movie_info_retriever) returns an error that the movie is not found, and the assistant repeatedly calls the same tool without recovery, indicating an execution failure.""
+}"
+TH_0043,TOOLHOP_2952aeca0fe1,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Wrong Tool Selection,2.0,0.88,"The assistant calls `publication_info_retriever` with `publication_type` set to ""Magazine"", which is not among the tool's supported types, making the chosen tool inappropriate for retrieving magazine publisher information.",True,,gpt-oss:120b-cloud,3.766125202178955,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.88,
+  ""reason"": ""The assistant calls `publication_info_retriever` with `publication_type` set to \""Magazine\"", which is not among the tool's supported types, making the chosen tool inappropriate for retrieving magazine publisher information.""
+}"
+TH_0044,TOOLHOP_2978e0c34dbe,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the movement, retrieved the official traction date, calculated the weekday, and provided the answer without any tool misuse, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,3.262476682662964,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the movement, retrieved the official traction date, calculated the weekday, and provided the answer without any tool misuse, parameter errors, or execution issues.""
+}"
+TH_0045,TOOLHOP_298f93b1b0ef,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.96,"The assistant supplied invalid values for the 'relationship' parameter in the historical_family_query tool calls, causing the tool to return an error.",True,,gpt-oss:120b-cloud,2.116697311401367,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant supplied invalid values for the 'relationship' parameter in the historical_family_query tool calls, causing the tool to return an error.""
+}"
+TH_0046,TOOLHOP_2a459380709e,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the film, retrieved the producer's name, and extracted the last letter of the producer's last name without any misinterpretation, wrong tool, parameter issues, or execution errors.",True,,gpt-oss:120b-cloud,1.8234786987304688,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the film, retrieved the producer's name, and extracted the last letter of the producer's last name without any misinterpretation, wrong tool, parameter issues, or execution errors.""
+}"
+TH_0047,TOOLHOP_2a5ac580e608,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly retrieved Grace Kelly's death date and accurately subtracted one month, providing the correct answer without any evident misunderstanding, wrong tool, parameter issues, or execution errors.",True,,gpt-oss:120b-cloud,3.9867897033691406,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly retrieved Grace Kelly's death date and accurately subtracted one month, providing the correct answer without any evident misunderstanding, wrong tool, parameter issues, or execution errors.""
+}"
+TH_0048,TOOLHOP_2a8ae2469569,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.9,"The assistant called historical_genealogy_lookup with relationship_type as a list (['father', 'grandfather']), which the tool reports as an invalid parameter, indicating fabricated or malformed arguments.",True,,gpt-oss:120b-cloud,3.1861658096313477,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called historical_genealogy_lookup with relationship_type as a list (['father', 'grandfather']), which the tool reports as an invalid parameter, indicating fabricated or malformed arguments.""
+}"
+TH_0049,TOOLHOP_2c82513e25c5,3,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,7.0,0.9,"The tool geo_entity_locator returned an irrelevant result ('Canyon'), indicating a failed execution, and the assistant proceeded without handling this error, leading to an unsupported answer.",True,,gpt-oss:120b-cloud,4.736439943313599,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.9,
+  ""reason"": ""The tool geo_entity_locator returned an irrelevant result ('Canyon'), indicating a failed execution, and the assistant proceeded without handling this error, leading to an unsupported answer.""
+}"
+TH_0050,TOOLHOP_2c9a62c3748f,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,6.0,0.92,"The assistant called the appropriate extract_year tool but supplied an unsupported date_format argument ('YYYY-MM-DD'), causing the tool to raise a ValueError. This incorrect parameter use is the earliest observable failure.",True,,gpt-oss:120b-cloud,3.2605557441711426,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.92,
+  ""reason"": ""The assistant called the appropriate extract_year tool but supplied an unsupported date_format argument ('YYYY-MM-DD'), causing the tool to raise a ValueError. This incorrect parameter use is the earliest observable failure.""
+}"
+TH_0051,TOOLHOP_2e01e1746789,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,5.0,0.95,"The assistant called historical_figure_info with an invalid information_type value ""birthdate"" (should be ""birth_date""), causing a tool error.",True,,gpt-oss:120b-cloud,3.125955581665039,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant called historical_figure_info with an invalid information_type value \""birthdate\"" (should be \""birth_date\""), causing a tool error.""
+}"
+TH_0052,TOOLHOP_2e946dff15fb,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,No Failure,,0.93,"The assistant correctly interpreted the request, used appropriate tools with valid parameters, and gracefully handled the lack of data by reporting the information is unavailable. No observable error in intent, tool choice, parameters, or execution.",True,,gpt-oss:120b-cloud,3.931945562362671,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant correctly interpreted the request, used appropriate tools with valid parameters, and gracefully handled the lack of data by reporting the information is unavailable. No observable error in intent, tool choice, parameters, or execution.""
+}"
+TH_0053,TOOLHOP_2eab55ee6916,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the album, retrieved its release date, calculated the day of the week, and provided a coherent answer without any misinterpretation, wrong tool use, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,1.8664472103118896,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the album, retrieved its release date, calculated the day of the week, and provided a coherent answer without any misinterpretation, wrong tool use, parameter errors, or execution issues.""
+}"
+TH_0054,TOOLHOP_2ef28d314a74,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,5.0,0.9,"The assistant passed an unsupported value 'default' for the 'priority' parameter to birth_year_extractor, causing a tool error.",True,,gpt-oss:120b-cloud,2.048449754714966,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant passed an unsupported value 'default' for the 'priority' parameter to birth_year_extractor, causing a tool error.""
+}"
+TH_0055,TOOLHOP_32f9e6523b5b,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.85,"The assistant correctly interpreted the task and chose an appropriate tool, but the first tool call (person_identifier) returned an error and the assistant did not recover, leading to a cascade of ineffective subsequent calls.",True,,gpt-oss:120b-cloud,2.118264675140381,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.85,
+  ""reason"": ""The assistant correctly interpreted the task and chose an appropriate tool, but the first tool call (person_identifier) returned an error and the assistant did not recover, leading to a cascade of ineffective subsequent calls.""
+}"
+TH_0056,TOOLHOP_34c66477519b,9,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The assistant selected appropriate tools and parameters, but the first tool call returned an error ('No data found'), and subsequent calls repeatedly failed, leading to a cascade of unsuccessful attempts.",True,,gpt-oss:120b-cloud,2.4975173473358154,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant selected appropriate tools and parameters, but the first tool call returned an error ('No data found'), and subsequent calls repeatedly failed, leading to a cascade of unsuccessful attempts.""
+}"
+TH_0057,TOOLHOP_3554dce55f34,4,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,7.0,0.96,"The string_length_counter tool, correctly selected, returned an incorrect length (0) for 'Beil', leading to downstream incorrect calculations.",True,,gpt-oss:120b-cloud,2.9557206630706787,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.96,
+  ""reason"": ""The string_length_counter tool, correctly selected, returned an incorrect length (0) for 'Beil', leading to downstream incorrect calculations.""
+}"
+TH_0058,TOOLHOP_389b4f6ee5bd,3,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.85,"The assistant passed an unsupported role value ""lead vocalist"" to band_member_identifier, causing an empty result; this incorrect parameter is the earliest observable failure.",True,,gpt-oss:120b-cloud,2.8807060718536377,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.85,
+  ""reason"": ""The assistant passed an unsupported role value \""lead vocalist\"" to band_member_identifier, causing an empty result; this incorrect parameter is the earliest observable failure.""
+}"
+TH_0059,TOOLHOP_3a085d1bc5fa,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.97,"The historical_bio_lookup tool returned 'Information not found' (turn 3), and the assistant failed to recover or use alternative methods, leading to a cascading inability to answer the query.",True,,gpt-oss:120b-cloud,1.9728870391845703,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The historical_bio_lookup tool returned 'Information not found' (turn 3), and the assistant failed to recover or use alternative methods, leading to a cascading inability to answer the query.""
+}"
+TH_0060,TOOLHOP_3a69aa1b60fe,8,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,5.0,0.9,"The film_release_date_finder tool returned an error ('Release date not found for the specified type and region') despite being called with appropriate actor and director parameters, causing the subsequent steps to fail.",True,,gpt-oss:120b-cloud,3.006763219833374,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.9,
+  ""reason"": ""The film_release_date_finder tool returned an error ('Release date not found for the specified type and region') despite being called with appropriate actor and director parameters, causing the subsequent steps to fail.""
+}"
+TH_0061,TOOLHOP_3b69df951b3d,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the show, retrieved its premiere year (2009), used an appropriate palindrome finder tool, and returned the correct closest palindrome (2002) without any tool errors or misinterpretations.",True,,gpt-oss:120b-cloud,5.240394592285156,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the show, retrieved its premiere year (2009), used an appropriate palindrome finder tool, and returned the correct closest palindrome (2002) without any tool errors or misinterpretations.""
+}"
+TH_0062,TOOLHOP_3bb18d9ab531,8,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.96,"The assistant called historical_genealogy_lookup with relationship_type ""maternal grandfather"", which is not a supported value for that tool, leading to an immediate error.",True,,gpt-oss:120b-cloud,2.4801249504089355,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called historical_genealogy_lookup with relationship_type \""maternal grandfather\"", which is not a supported value for that tool, leading to an immediate error.""
+}"
+TH_0063,TOOLHOP_3c155cb18334,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.96,"The assistant used the correct biographical_info_retriever tool but supplied an unsupported 'data_source' value, causing the tool to error on turn 3.",True,,gpt-oss:120b-cloud,4.176035404205322,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant used the correct biographical_info_retriever tool but supplied an unsupported 'data_source' value, causing the tool to error on turn 3.""
+}"
+TH_0064,TOOLHOP_3c26dffc8a2e,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,6.0,0.96,"The assistant called the date_calculator with an incorrectly formatted 'interval' argument (using {'days': 7} instead of the required {'value': 7, 'unit': 'days'}), causing the tool to return an error.",True,,gpt-oss:120b-cloud,2.826594591140747,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called the date_calculator with an incorrectly formatted 'interval' argument (using {'days': 7} instead of the required {'value': 7, 'unit': 'days'}), causing the tool to return an error.""
+}"
+TH_0065,TOOLHOP_3c331613a26f,2,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,3.0,0.93,"The assistant correctly identified the name and used an appropriate tool, but the tool returned an incorrect count (6) and list of combos that do not correspond to actual two-letter substrings of ""Tippi"", leading to a wrong answer.",True,,gpt-oss:120b-cloud,7.442054986953735,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant correctly identified the name and used an appropriate tool, but the tool returned an incorrect count (6) and list of combos that do not correspond to actual two-letter substrings of \""Tippi\"", leading to a wrong answer.""
+}"
+TH_0066,TOOLHOP_3cc5149977a9,3,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.96,"The assistant called date_calculator with an unsupported argument 'output_format': ""date"", causing the tool to error. This is a misuse of parameters rather than a tool selection or intent issue.",True,,gpt-oss:120b-cloud,2.7598063945770264,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called date_calculator with an unsupported argument 'output_format': \""date\"", causing the tool to error. This is a misuse of parameters rather than a tool selection or intent issue.""
+}"
+TH_0067,TOOLHOP_3d5bdf107de5,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Wrong Tool Selection,2.0,0.9,"The assistant called composer_lookup with the film title, but the task requires first finding the film's composer (likely via a film lookup tool) before accessing the composer's father.",True,,gpt-oss:120b-cloud,2.3737525939941406,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called composer_lookup with the film title, but the task requires first finding the film's composer (likely via a film lookup tool) before accessing the composer's father.""
+}"
+TH_0068,TOOLHOP_3db2991a3bd1,10,COMPLETED_FORCED_FINALIZE,SOFT_TOOL_CALL_THRESHOLD,True,Execution/Cascading Error,3.0,0.97,"The first tool call (genealogy_query) returns 'No data available', and subsequent calls also fail, leading to a cascade of unsuccessful attempts without recovery.",True,,gpt-oss:120b-cloud,2.3799891471862793,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The first tool call (genealogy_query) returns 'No data available', and subsequent calls also fail, leading to a cascade of unsuccessful attempts without recovery.""
+}"
+TH_0069,TOOLHOP_3f1522d02559,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The agent eventually retrieved the correct album title, found the matching 1977 film, obtained its director, and returned the correct first letter. The extra initial tool call was unnecessary but did not cause an error or incorrect reasoning.",True,,gpt-oss:120b-cloud,4.481738328933716,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The agent eventually retrieved the correct album title, found the matching 1977 film, obtained its director, and returned the correct first letter. The extra initial tool call was unnecessary but did not cause an error or incorrect reasoning.""
+}"
+TH_0070,TOOLHOP_3f4ed2f1010b,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.93,"The assistant passed an unsupported value ""maternal grandmother"" for the 'relationship_type' argument to the historical_relationship_finder tool, which only accepts a predefined list of relationship types.",True,,gpt-oss:120b-cloud,2.632488250732422,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant passed an unsupported value \""maternal grandmother\"" for the 'relationship_type' argument to the historical_relationship_finder tool, which only accepts a predefined list of relationship types.""
+}"
+TH_0071,TOOLHOP_41f448afc826,10,COMPLETED_FORCED_FINALIZE,SOFT_TOOL_CALL_THRESHOLD,True,Execution/Cascading Error,3.0,0.93,"The first tool call (historical_figure_info for Duleep Singh) returns an error, and the assistant does not recover, leading to a cascade of further failed calls and ultimately an inability to answer.",True,,gpt-oss:120b-cloud,5.636871814727783,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.93,
+  ""reason"": ""The first tool call (historical_figure_info for Duleep Singh) returns an error, and the assistant does not recover, leading to a cascade of further failed calls and ultimately an inability to answer.""
+}"
+TH_0072,TOOLHOP_4260e7eabc19,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,5.0,0.92,"The assistant called family_relationship_finder with an unsupported relationship_type ('spouse'), causing an error. The invalid argument is a parameter hallucination, observed when the tool returned an error on turn 5.",True,,gpt-oss:120b-cloud,4.872197389602661,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.92,
+  ""reason"": ""The assistant called family_relationship_finder with an unsupported relationship_type ('spouse'), causing an error. The invalid argument is a parameter hallucination, observed when the tool returned an error on turn 5.""
+}"
+TH_0073,TOOLHOP_42d2a6ad49f9,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,8.0,0.9,"The assistant called the timezone calculator with location ""Bago, Myanmar"", which the tool reports as unsupported, indicating an incorrect or unrecognized location argument.",True,,gpt-oss:120b-cloud,3.2678017616271973,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called the timezone calculator with location \""Bago, Myanmar\"", which the tool reports as unsupported, indicating an incorrect or unrecognized location argument.""
+}"
+TH_0074,TOOLHOP_43095da636f8,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant supplied an invalid 'output_format' value ('JSON' instead of allowed 'json'), causing the tool to return an error.",True,,gpt-oss:120b-cloud,3.359807252883911,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant supplied an invalid 'output_format' value ('JSON' instead of allowed 'json'), causing the tool to return an error.""
+}"
+TH_0075,TOOLHOP_43814346e214,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant called publication_info_retriever with an invalid 'output_format' value ""JSON"" (uppercase), which the tool rejected as unsupported. This incorrect argument constitutes a parameter hallucination.",True,,gpt-oss:120b-cloud,2.0275490283966064,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called publication_info_retriever with an invalid 'output_format' value \""JSON\"" (uppercase), which the tool rejected as unsupported. This incorrect argument constitutes a parameter hallucination.""
+}"
+TH_0076,TOOLHOP_43b4d1d46562,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the director, found the spouse, extracted the last name, and counted unique letters without any tool misuse, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,1.964468240737915,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the director, found the spouse, extracted the last name, and counted unique letters without any tool misuse, parameter errors, or execution issues.""
+}"
+TH_0077,TOOLHOP_44b2920d7e9c,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.96,"The assistant called biographical_info_retriever with an unsupported info_type value ['death_date'], causing the tool to return an error. This indicates incorrect parameters were supplied.",True,,gpt-oss:120b-cloud,1.6365296840667725,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called biographical_info_retriever with an unsupported info_type value ['death_date'], causing the tool to return an error. This indicates incorrect parameters were supplied.""
+}"
+TH_0078,TOOLHOP_45cbe19f3771,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the publisher (Sigma Xi), retrieved its founding year, and computed the difference with 2024 using appropriate tools and parameters.",True,,gpt-oss:120b-cloud,1.5471904277801514,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the publisher (Sigma Xi), retrieved its founding year, and computed the difference with 2024 using appropriate tools and parameters.""
+}"
+TH_0079,TOOLHOP_491173598037,10,COMPLETED_FORCED_FINALIZE,SOFT_TOOL_CALL_THRESHOLD,True,Execution/Cascading Error,3.0,0.96,"The agent correctly identified the needed tool and parameters, but the historical_figure_info tool returned an error (no information found) at turn 3, and subsequent calls continued without successful data, indicating an execution failure.",True,,gpt-oss:120b-cloud,2.7277097702026367,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The agent correctly identified the needed tool and parameters, but the historical_figure_info tool returned an error (no information found) at turn 3, and subsequent calls continued without successful data, indicating an execution failure.""
+}"
+TH_0080,TOOLHOP_49ca49195c1b,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,10.0,0.92,"The assistant called family_relationship_finder with relationship_type set to ""children"", which is not a supported value (must be one of ['child', 'parent', 'sibling', 'in-law', 'step-relation']), causing a tool error.",True,,gpt-oss:120b-cloud,3.527106761932373,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 10,
+  ""confidence"": 0.92,
+  ""reason"": ""The assistant called family_relationship_finder with relationship_type set to \""children\"", which is not a supported value (must be one of ['child', 'parent', 'sibling', 'in-law', 'step-relation']), causing a tool error.""
+}"
+TH_0081,TOOLHOP_4ac2bbff5b52,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.93,"The assistant called genealogy_query with relationship_type ""paternal_grandfather"", which the tool reports as invalid, indicating an unsupported/incorrect parameter was supplied.",True,,gpt-oss:120b-cloud,2.7421276569366455,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant called genealogy_query with relationship_type \""paternal_grandfather\"", which the tool reports as invalid, indicating an unsupported/incorrect parameter was supplied.""
+}"
+TH_0082,TOOLHOP_4b14fe749393,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The genealogy_lookup tool, which was appropriately selected, returned an error (no matching records) at turn 3, and the assistant failed to recover, repeatedly calling the same tool without success.",True,,gpt-oss:120b-cloud,2.033785343170166,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The genealogy_lookup tool, which was appropriately selected, returned an error (no matching records) at turn 3, and the assistant failed to recover, repeatedly calling the same tool without success.""
+}"
+TH_0083,TOOLHOP_4b2e392816d9,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the director using a fuzzy search after an initial not-found error, then retrieved the spouse via a biographical query and extracted the correct first letter in lowercase. All tool selections and parameters were appropriate, and the execution succeeded.",True,,gpt-oss:120b-cloud,2.9810101985931396,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the director using a fuzzy search after an initial not-found error, then retrieved the spouse via a biographical query and extracted the correct first letter in lowercase. All tool selections and parameters were appropriate, and the execution succeeded.""
+}"
+TH_0084,TOOLHOP_4b68e45a7674,4,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,6.0,0.9,"The timezone_converter tool was called with a valid‑looking timezone (UTC-12) but returned an error, causing the assistant to retry. This execution error is the earliest observable failure.",True,,gpt-oss:120b-cloud,2.8984742164611816,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.9,
+  ""reason"": ""The timezone_converter tool was called with a valid‑looking timezone (UTC-12) but returned an error, causing the assistant to retry. This execution error is the earliest observable failure.""
+}"
+TH_0085,TOOLHOP_4cae59930968,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.85,"The assistant called film_director_lookup with a 'year' parameter that the tool does not support, causing an error. This unsupported argument constitutes a parameter hallucination.",True,,gpt-oss:120b-cloud,2.401798725128174,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.85,
+  ""reason"": ""The assistant called film_director_lookup with a 'year' parameter that the tool does not support, causing an error. This unsupported argument constitutes a parameter hallucination.""
+}"
+TH_0086,TOOLHOP_4d89d294cd4c,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Intent Misunderstanding,2.0,0.92,"The assistant interpreted the request as needing a biography of the character Ichitaka Seto, calling biographical_info_retriever with that name, whereas the user asked for the birth year of the manga's author/illustrator.",True,,gpt-oss:120b-cloud,2.184079885482788,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.92,
+  ""reason"": ""The assistant interpreted the request as needing a biography of the character Ichitaka Seto, calling biographical_info_retriever with that name, whereas the user asked for the birth year of the manga's author/illustrator.""
+}"
+TH_0087,TOOLHOP_4dea1daedbe9,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant supplied an unsupported value 'maternal grandmother' for the 'relationship_type' argument, which the tool rejected as invalid.",True,,gpt-oss:120b-cloud,1.6293859481811523,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant supplied an unsupported value 'maternal grandmother' for the 'relationship_type' argument, which the tool rejected as invalid.""
+}"
+TH_0088,TOOLHOP_4e86d8c0a0eb,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,5.0,0.95,"The assistant called author_finder without the required 'book_title' argument, causing a TypeError. This missing/incorrect parameter is the earliest observable failure.",True,,gpt-oss:120b-cloud,2.503626585006714,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant called author_finder without the required 'book_title' argument, causing a TypeError. This missing/incorrect parameter is the earliest observable failure.""
+}"
+TH_0089,TOOLHOP_4ef47a459efc,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,4.0,0.9,"After the first genealogy_query returned no match, the assistant repeatedly called the same tool (turn 4) without handling the lack of data, leading to identical results and eventual forced finalization.",True,,gpt-oss:120b-cloud,2.285107135772705,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.9,
+  ""reason"": ""After the first genealogy_query returned no match, the assistant repeatedly called the same tool (turn 4) without handling the lack of data, leading to identical results and eventual forced finalization.""
+}"
+TH_0090,TOOLHOP_51eac6b471a2,9,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The first tool call includes an unsupported argument 'handle_multiple_results', causing a TypeError before any valid data could be retrieved.",True,,gpt-oss:120b-cloud,1.599088430404663,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The first tool call includes an unsupported argument 'handle_multiple_results', causing a TypeError before any valid data could be retrieved.""
+}"
+TH_0091,TOOLHOP_524e05dc7723,2,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant supplied an invalid value for the 'game_genre' parameter ('professional wrestling') which the tool rejected, indicating a hallucinated/unsupported argument.",True,,gpt-oss:120b-cloud,2.3209478855133057,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant supplied an invalid value for the 'game_genre' parameter ('professional wrestling') which the tool rejected, indicating a hallucinated/unsupported argument.""
+}"
+TH_0092,TOOLHOP_584130e068c3,8,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,3.0,0.96,"Assistant supplied an unsupported 'output_format' argument ('JSON') to publication_info_retriever, causing the tool to return an error.",True,,gpt-oss:120b-cloud,3.6409974098205566,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""Assistant supplied an unsupported 'output_format' argument ('JSON') to publication_info_retriever, causing the tool to return an error.""
+}"
+TH_0093,TOOLHOP_59129aacfb6c,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,5.0,0.9,"The release date tool returned an error on the first call, and the assistant repeatedly invoked the same tool with varied parameters without recovering, causing a cascade of failures.",True,,gpt-oss:120b-cloud,3.220341920852661,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.9,
+  ""reason"": ""The release date tool returned an error on the first call, and the assistant repeatedly invoked the same tool with varied parameters without recovering, causing a cascade of failures.""
+}"
+TH_0094,TOOLHOP_5994e39b009f,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,8.0,0.9,"The assistant calls distinct_combinations with input ""Meghan"" despite having no evidence from prior tool calls that this is the child's first name, inventing a parameter not supported by the observed data.",True,,gpt-oss:120b-cloud,3.955782175064087,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant calls distinct_combinations with input \""Meghan\"" despite having no evidence from prior tool calls that this is the child's first name, inventing a parameter not supported by the observed data.""
+}"
+TH_0095,TOOLHOP_5a14ec71168c,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,7.0,0.97,"The timezone_difference_calculator tool returned an error for the first location query, and the agent failed to recover, leading to an incorrect final answer.",True,,gpt-oss:120b-cloud,2.655088186264038,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.97,
+  ""reason"": ""The timezone_difference_calculator tool returned an error for the first location query, and the agent failed to recover, leading to an incorrect final answer.""
+}"
+TH_0096,TOOLHOP_5a5b0f9b7d3f,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified Kalanipauahi's niece, retrieved her spouse, extracted the last name, and accurately counted repeated letters with appropriate tools and parameters.",True,,gpt-oss:120b-cloud,1.5183143615722656,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified Kalanipauahi's niece, retrieved her spouse, extracted the last name, and accurately counted repeated letters with appropriate tools and parameters.""
+}"
+TH_0097,TOOLHOP_5a73b747ec74,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,7.0,0.78,"The assistant made a tool call (turn 6) with incomplete/incorrect parameters (only ""Jewel Staite"" instead of both required actors), causing the tool to return an error at turn 7.",True,,gpt-oss:120b-cloud,4.556281328201294,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.78,
+  ""reason"": ""The assistant made a tool call (turn 6) with incomplete/incorrect parameters (only \""Jewel Staite\"" instead of both required actors), causing the tool to return an error at turn 7.""
+}"
+TH_0098,TOOLHOP_5b5b3319a315,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the paternal grandfather (Sétna Airt) using an alternative tool after an error, extracted the last name 'Airt', reversed it to 'triA', and provided the answer without observable misinterpretation, wrong tool, bad parameters, or execution errors.",True,,gpt-oss:120b-cloud,3.1073362827301025,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the paternal grandfather (Sétna Airt) using an alternative tool after an error, extracted the last name 'Airt', reversed it to 'triA', and provided the answer without observable misinterpretation, wrong tool, bad parameters, or execution errors.""
+}"
+TH_0099,TOOLHOP_5cff99d9ee98,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified Obama’s opponent, retrieved the child’s name, extracted the last name, and accurately counted the letter “a”. All tool selections and parameters were appropriate.",True,,gpt-oss:120b-cloud,1.715764045715332,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified Obama’s opponent, retrieved the child’s name, extracted the last name, and accurately counted the letter “a”. All tool selections and parameters were appropriate.""
+}"
+TH_0100,TOOLHOP_5d00f2c62873,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant called historical_relationship_finder with an unsupported relationship_type value ""maternal grandmother"", which is not among the allowed options, causing an immediate tool error.",True,,gpt-oss:120b-cloud,2.1338720321655273,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called historical_relationship_finder with an unsupported relationship_type value \""maternal grandmother\"", which is not among the allowed options, causing an immediate tool error.""
+}"
+TH_0101,TOOLHOP_5e796e48332a,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the program (Saturday Night Live), retrieved its 43rd season premiere date, added one year, and confirmed Luke Null's involvement, using appropriate tools and parameters without errors.",True,,gpt-oss:120b-cloud,3.0410337448120117,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the program (Saturday Night Live), retrieved its 43rd season premiere date, added one year, and confirmed Luke Null's involvement, using appropriate tools and parameters without errors.""
+}"
+TH_0102,TOOLHOP_5f573b82f1da,3,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,3.0,0.93,"The publication_publisher_lookup tool returned an incorrect publisher (Science Fiction Poetry Association) for 'Eye To The Telescope', leading to a cascade of wrong subsequent steps.",True,,gpt-oss:120b-cloud,2.2501587867736816,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.93,
+  ""reason"": ""The publication_publisher_lookup tool returned an incorrect publisher (Science Fiction Poetry Association) for 'Eye To The Telescope', leading to a cascade of wrong subsequent steps.""
+}"
+TH_0103,TOOLHOP_5f6955d227a3,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.88,"The agent selected appropriate tools and parameters, but the first tool call returned no data, and subsequent calls also failed, leading to a cascade of insufficient information without recovery.",True,,gpt-oss:120b-cloud,2.6743977069854736,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.88,
+  ""reason"": ""The agent selected appropriate tools and parameters, but the first tool call returned no data, and subsequent calls also failed, leading to a cascade of insufficient information without recovery.""
+}"
+TH_0104,TOOLHOP_5fd7e33e01c8,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Intent Misunderstanding,6.0,0.9,"The assistant shifts from searching for the father's death date to looking up George Cochrane's birth date, indicating a fundamental misunderstanding of the user's request.",True,,gpt-oss:120b-cloud,2.1284639835357666,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant shifts from searching for the father's death date to looking up George Cochrane's birth date, indicating a fundamental misunderstanding of the user's request.""
+}"
+TH_0105,TOOLHOP_60ab32370019,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the band, lead singer, extracted the last name, counted vowels, and provided the correct answer without any misinterpretation, tool misuse, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,1.3215363025665283,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the band, lead singer, extracted the last name, counted vowels, and provided the correct answer without any misinterpretation, tool misuse, parameter errors, or execution issues.""
+}"
+TH_0106,TOOLHOP_620807a1bbd6,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the publisher, retrieved its founding year, and used an appropriate palindrome finder tool with correct parameters, yielding a plausible closest palindrome.",True,,gpt-oss:120b-cloud,2.0055272579193115,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the publisher, retrieved its founding year, and used an appropriate palindrome finder tool with correct parameters, yielding a plausible closest palindrome.""
+}"
+TH_0107,TOOLHOP_624ec06de690,6,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,3.0,0.97,"The first tool call (enhanced_family_relationship_finder) is appropriate, but it returns an error ""Person not found in the data source."" This execution failure is the earliest observable problem, leading to subsequent ineffective steps.",True,,gpt-oss:120b-cloud,2.116792678833008,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The first tool call (enhanced_family_relationship_finder) is appropriate, but it returns an error \""Person not found in the data source.\"" This execution failure is the earliest observable problem, leading to subsequent ineffective steps.""
+}"
+TH_0108,TOOLHOP_632667547e7c,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant calls the convention_center_query tool with an 'order' parameter that the tool reports as invalid, indicating unsupported or malformed arguments.",True,,gpt-oss:120b-cloud,1.8835558891296387,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant calls the convention_center_query tool with an 'order' parameter that the tool reports as invalid, indicating unsupported or malformed arguments.""
+}"
+TH_0109,TOOLHOP_639d67af2a68,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the film, retrieved its release year (2006), reversed it to 6002, added 4 using the appropriate arithmetic tool, and produced the correct result 6006 without any misinterpretation, wrong tool, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,2.675710678100586,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the film, retrieved its release year (2006), reversed it to 6002, added 4 using the appropriate arithmetic tool, and produced the correct result 6006 without any misinterpretation, wrong tool, parameter errors, or execution issues.""
+}"
+TH_0110,TOOLHOP_664352171132,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the king (George V), retrieved his birth year (1865), and used an appropriate palindrome-finding tool to return the closest palindrome (1881). All steps are coherent and successful.",True,,gpt-oss:120b-cloud,2.342893600463867,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the king (George V), retrieved his birth year (1865), and used an appropriate palindrome-finding tool to return the closest palindrome (1881). All steps are coherent and successful.""
+}"
+TH_0111,TOOLHOP_66c4d1ec6dad,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly retrieved the director, identified the spouse, extracted the first name, reversed it, and provided the expected result without any misinterpretation, wrong tool use, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,1.6266822814941406,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly retrieved the director, identified the spouse, extracted the first name, reversed it, and provided the expected result without any misinterpretation, wrong tool use, parameter errors, or execution issues.""
+}"
+TH_0112,TOOLHOP_6b0f4d999089,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,6.0,0.97,"The assistant calls relationship_finder with an unsupported relationship_type value ""parent"", which the tool reports as an error, indicating an invalid parameter.",True,,gpt-oss:120b-cloud,2.0367321968078613,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant calls relationship_finder with an unsupported relationship_type value \""parent\"", which the tool reports as an error, indicating an invalid parameter.""
+}"
+TH_0113,TOOLHOP_6c4c04be8f82,8,COMPLETED,NATURAL_COMPLETION,False,Wrong Tool Selection,2.0,0.85,"The agent used the relationship_query tool to retrieve information about Olga Larson, but the task only required her first name. Selecting a relationship query tool for this purpose is inappropriate, leading to an error and misdirected subsequent steps.",True,,gpt-oss:120b-cloud,2.7178125381469727,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.85,
+  ""reason"": ""The agent used the relationship_query tool to retrieve information about Olga Larson, but the task only required her first name. Selecting a relationship query tool for this purpose is inappropriate, leading to an error and misdirected subsequent steps.""
+}"
+TH_0114,TOOLHOP_6cc71d91778f,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.92,"The agent correctly understood the task and chose the appropriate character_lookup tool, but the tool returned an error ('Character not found') on the first call, and subsequent calls continued to fail, leading to a nonsensical final answer.",True,,gpt-oss:120b-cloud,3.0261318683624268,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.92,
+  ""reason"": ""The agent correctly understood the task and chose the appropriate character_lookup tool, but the tool returned an error ('Character not found') on the first call, and subsequent calls continued to fail, leading to a nonsensical final answer.""
+}"
+TH_0115,TOOLHOP_6d0e1050797b,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant called publication_metadata_retriever with an unsupported argument 'format', causing a TypeError before any valid data could be retrieved.",True,,gpt-oss:120b-cloud,1.8575284481048584,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called publication_metadata_retriever with an unsupported argument 'format', causing a TypeError before any valid data could be retrieved.""
+}"
+TH_0116,TOOLHOP_6d3eeb1a2cc4,1,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly used the publisher_lookup tool to obtain the founding year (1961) and responded with its reverse (1691), matching the user's request without any evident misunderstanding, wrong tool, bad parameters, or execution errors.",True,,gpt-oss:120b-cloud,1.788705587387085,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly used the publisher_lookup tool to obtain the founding year (1961) and responded with its reverse (1691), matching the user's request without any evident misunderstanding, wrong tool, bad parameters, or execution errors.""
+}"
+TH_0117,TOOLHOP_6e21fce62b88,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.9,"The assistant called historical_bio_retriever with an unsupported data_type value ""spouse"", which is not among the allowed options, indicating invented/incorrect parameters.",True,,gpt-oss:120b-cloud,2.2310569286346436,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called historical_bio_retriever with an unsupported data_type value \""spouse\"", which is not among the allowed options, indicating invented/incorrect parameters.""
+}"
+TH_0118,TOOLHOP_6ef2c7d1d434,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,8.0,0.95,"The assistant called song_composer_finder with an unsupported info_format value ""death_date"", which the tool rejected, indicating invented/incorrect parameters.",True,,gpt-oss:120b-cloud,2.593564748764038,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant called song_composer_finder with an unsupported info_format value \""death_date\"", which the tool rejected, indicating invented/incorrect parameters.""
+}"
+TH_0119,TOOLHOP_6f8246002c1c,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.96,"The agent called historical_relationship_finder with an unsupported relationship_type value ""maternal grandmother"", causing the tool to return an error. This invalid parameter is the earliest observable failure.",True,,gpt-oss:120b-cloud,2.154639720916748,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The agent called historical_relationship_finder with an unsupported relationship_type value \""maternal grandmother\"", causing the tool to return an error. This invalid parameter is the earliest observable failure.""
+}"
+TH_0120,TOOLHOP_6fb84aed32fa,3,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.96,"The assistant called date_calculator with an unsupported 'output_format' value ""YYYY-MM-DD"", causing the tool to error.",True,,gpt-oss:120b-cloud,2.06746768951416,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called date_calculator with an unsupported 'output_format' value \""YYYY-MM-DD\"", causing the tool to error.""
+}"
+TH_0121,TOOLHOP_6fe3dfe31468,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.95,"The assistant passed an unsupported relationship type ""father-in-law"" to the relationship_finder tool, which returned an ""Invalid relationship type"" error, indicating a parameter issue.",True,,gpt-oss:120b-cloud,1.7352123260498047,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant passed an unsupported relationship type \""father-in-law\"" to the relationship_finder tool, which returned an \""Invalid relationship type\"" error, indicating a parameter issue.""
+}"
+TH_0122,TOOLHOP_71ef3ed06953,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant called genealogy_lookup with an invalid 'relationship_type' value ('sibling'), which the tool does not accept, leading to immediate errors.",True,,gpt-oss:120b-cloud,2.1230461597442627,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called genealogy_lookup with an invalid 'relationship_type' value ('sibling'), which the tool does not accept, leading to immediate errors.""
+}"
+TH_0123,TOOLHOP_72c1975b93f0,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,5.0,0.97,"The assistant supplied an unsupported value 'grandmother' for the 'relationship_type' parameter in the historical_relationship_finder tool (Turn 4), which caused the tool to return an error at Turn 5, indicating a hallucinated/invalid parameter.",True,,gpt-oss:120b-cloud,2.667217493057251,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant supplied an unsupported value 'grandmother' for the 'relationship_type' parameter in the historical_relationship_finder tool (Turn 4), which caused the tool to return an error at Turn 5, indicating a hallucinated/invalid parameter.""
+}"
+TH_0124,TOOLHOP_74cbd2c215c2,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.95,"The first tool call supplies an unsupported value ('released') for the 'filter_by_status' argument, causing a tool error before any correct execution.",True,,gpt-oss:120b-cloud,1.421759843826294,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.95,
+  ""reason"": ""The first tool call supplies an unsupported value ('released') for the 'filter_by_status' argument, causing a tool error before any correct execution.""
+}"
+TH_0125,TOOLHOP_75988f5ac057,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the publisher, retrieved its founding year, summed the digits, cubed the sum using appropriate tools, and produced a coherent answer without any misinterpretation, wrong tool, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,1.604325771331787,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the publisher, retrieved its founding year, summed the digits, cubed the sum using appropriate tools, and produced a coherent answer without any misinterpretation, wrong tool, parameter errors, or execution issues.""
+}"
+TH_0126,TOOLHOP_76546f9a641e,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,5.0,0.96,"The assistant correctly identified a game via game_character_lookup, but the subsequent call to game_release_date_finder returned an error ('Game not found in the database'), indicating a failure in execution despite appropriate tool selection and parameters.",True,,gpt-oss:120b-cloud,2.0246458053588867,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant correctly identified a game via game_character_lookup, but the subsequent call to game_release_date_finder returned an error ('Game not found in the database'), indicating a failure in execution despite appropriate tool selection and parameters.""
+}"
+TH_0127,TOOLHOP_7719a1c782a1,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.9,"The agent correctly identified the actor playing Jack, retrieved the actor's birth year, reversed it, and provided the result, matching the user's request without observable errors.",True,,gpt-oss:120b-cloud,2.4335358142852783,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.9,
+  ""reason"": ""The agent correctly identified the actor playing Jack, retrieved the actor's birth year, reversed it, and provided the result, matching the user's request without observable errors.""
+}"
+TH_0128,TOOLHOP_775bc5c30e27,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.98,"The assistant correctly identified the touring partner (Blood on the Dance Floor), retrieved its formation year (2006), and computed the digit product (0) without any tool misuse or parameter errors.",True,,gpt-oss:120b-cloud,1.7459862232208252,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.98,
+  ""reason"": ""The assistant correctly identified the touring partner (Blood on the Dance Floor), retrieved its formation year (2006), and computed the digit product (0) without any tool misuse or parameter errors.""
+}"
+TH_0129,TOOLHOP_7884821233b4,5,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the actress (Bindi Irwin), retrieved her father (Steve Irwin), extracted the last name, counted its syllables, and produced the correct answer. The initial tool error was resolved by adjusting parameters, and the overall trajectory is coherent with no observable failure.",True,,gpt-oss:120b-cloud,2.7404909133911133,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the actress (Bindi Irwin), retrieved her father (Steve Irwin), extracted the last name, counted its syllables, and produced the correct answer. The initial tool error was resolved by adjusting parameters, and the overall trajectory is coherent with no observable failure.""
+}"
+TH_0130,TOOLHOP_7a698699a922,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.96,"The assistant passed an invalid value 'nonprofit' for the 'organization_type' parameter, which the tool rejected, indicating a parameter hallucination.",True,,gpt-oss:120b-cloud,1.9385175704956055,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant passed an invalid value 'nonprofit' for the 'organization_type' parameter, which the tool rejected, indicating a parameter hallucination.""
+}"
+TH_0131,TOOLHOP_7a95563490d8,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.97,"The assistant supplied an invalid value for the 'output_format' argument ('JSON' instead of allowed 'json'), causing the tool to return an error. This incorrect parameter is the earliest observable failure.",True,,gpt-oss:120b-cloud,2.813523530960083,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant supplied an invalid value for the 'output_format' argument ('JSON' instead of allowed 'json'), causing the tool to return an error. This incorrect parameter is the earliest observable failure.""
+}"
+TH_0132,TOOLHOP_7d9f2b808265,6,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,5.0,0.97,"The assistant called founder_identifier with an incorrect 'organization_type' value ('political party' instead of the expected 'political_party'), causing a tool error.",True,,gpt-oss:120b-cloud,2.841646194458008,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called founder_identifier with an incorrect 'organization_type' value ('political party' instead of the expected 'political_party'), causing a tool error.""
+}"
+TH_0133,TOOLHOP_7edab1f00ca6,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant passed an unsupported relationship_type ('paternal grandfather') to the historical_relationship_finder, causing an invalid‑relationship error; this is a parameter hallucination.",True,,gpt-oss:120b-cloud,2.174579620361328,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant passed an unsupported relationship_type ('paternal grandfather') to the historical_relationship_finder, causing an invalid‑relationship error; this is a parameter hallucination.""
+}"
+TH_0134,TOOLHOP_7ee08d3afb3a,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.95,"The assistant called historical_bio_lookup with an invalid 'query_type' value ('full biography'), which is not among the allowed options, leading to a tool error.",True,,gpt-oss:120b-cloud,2.542529821395874,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant called historical_bio_lookup with an invalid 'query_type' value ('full biography'), which is not among the allowed options, leading to a tool error.""
+}"
+TH_0135,TOOLHOP_80e28a51cbc2,2,COMPLETED,NATURAL_COMPLETION,False,Intent Misunderstanding,4.0,0.92,"The assistant never identified the American film actor who produced a Stephen Susco‑written movie; instead it arbitrarily chose the character ""i"" and converted it to binary, showing a fundamental misinterpretation of the user’s request.",True,,gpt-oss:120b-cloud,2.675351619720459,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.92,
+  ""reason"": ""The assistant never identified the American film actor who produced a Stephen Susco‑written movie; instead it arbitrarily chose the character \""i\"" and converted it to binary, showing a fundamental misinterpretation of the user’s request.""
+}"
+TH_0136,TOOLHOP_812ed4562d32,9,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.86,"The assistant called film_release_query with a fabricated film_title ""Mia Jones"", which is not a valid film title and does not match the required parameters, leading to an unsupported query.",True,,gpt-oss:120b-cloud,5.864850759506226,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.86,
+  ""reason"": ""The assistant called film_release_query with a fabricated film_title \""Mia Jones\"", which is not a valid film title and does not match the required parameters, leading to an unsupported query.""
+}"
+TH_0137,TOOLHOP_81d51c78e638,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The appropriate spouse lookup tool was called with plausible parameters, but it returned a 'Person not found' error, and the agent failed to recover, leading to repeated unsuccessful calls.",True,,gpt-oss:120b-cloud,3.1603658199310303,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The appropriate spouse lookup tool was called with plausible parameters, but it returned a 'Person not found' error, and the agent failed to recover, leading to repeated unsuccessful calls.""
+}"
+TH_0138,TOOLHOP_828f720439ce,6,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The agent correctly interpreted the task, selected appropriate tools, provided valid parameters, and successfully obtained the father's death year and the closest palindrome number without any observable errors.",True,,gpt-oss:120b-cloud,2.807358980178833,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The agent correctly interpreted the task, selected appropriate tools, provided valid parameters, and successfully obtained the father's death year and the closest palindrome number without any observable errors.""
+}"
+TH_0139,TOOLHOP_8383da94fbc3,10,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.93,"The assistant called athlete_bio_retriever with an unsupported 'data_source' value ""default"", which the tool flagged as invalid, indicating incorrect parameters.",True,,gpt-oss:120b-cloud,5.277163982391357,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant called athlete_bio_retriever with an unsupported 'data_source' value \""default\"", which the tool flagged as invalid, indicating incorrect parameters.""
+}"
+TH_0140,TOOLHOP_84b0b577501b,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,6.0,0.96,"The assistant called the correct date_calculator tool but supplied a malformed 'duration' argument (e.g., {""days"": 7}) that the tool rejected, indicating incorrect parameters.",True,,gpt-oss:120b-cloud,2.437222480773926,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called the correct date_calculator tool but supplied a malformed 'duration' argument (e.g., {\""days\"": 7}) that the tool rejected, indicating incorrect parameters.""
+}"
+TH_0141,TOOLHOP_85f1002bf139,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the director, found the spouse, extracted the last name, counted vowels, and provided the correct answer without any misinterpretation, tool misuse, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,2.602511405944824,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the director, found the spouse, extracted the last name, counted vowels, and provided the correct answer without any misinterpretation, tool misuse, parameter errors, or execution issues.""
+}"
+TH_0142,TOOLHOP_8665243ef242,5,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,7.0,0.86,"The movie_director_lookup tool returned an incorrect director (""Martha Coolidge""), leading to downstream use of wrong data for binary conversion.",True,,gpt-oss:120b-cloud,5.399628639221191,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.86,
+  ""reason"": ""The movie_director_lookup tool returned an incorrect director (\""Martha Coolidge\""), leading to downstream use of wrong data for binary conversion.""
+}"
+TH_0143,TOOLHOP_867cd58f3fe3,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the publisher (Western Washington University), retrieved its founding year (1893), and used the appropriate palindrome-finding tool to return the nearest palindrome (1881) without any misinterpretation, wrong tool, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,2.125124931335449,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the publisher (Western Washington University), retrieved its founding year (1893), and used the appropriate palindrome-finding tool to return the nearest palindrome (1881) without any misinterpretation, wrong tool, parameter errors, or execution issues.""
+}"
+TH_0144,TOOLHOP_86970064ea53,6,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The agent correctly identified the director, retrieved the father's name, extracted Ora Durham's last name, and computed the letter difference (6‑5=1) without any evident misinterpretation, wrong tool, bad parameters, or execution errors.",True,,gpt-oss:120b-cloud,2.988694190979004,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The agent correctly identified the director, retrieved the father's name, extracted Ora Durham's last name, and computed the letter difference (6‑5=1) without any evident misinterpretation, wrong tool, bad parameters, or execution errors.""
+}"
+TH_0145,TOOLHOP_86e55aec99bf,6,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The first tool call to historical_genealogy_lookup omitted required parameters (figure_name and data_sources), causing an error before any useful information was retrieved.",True,,gpt-oss:120b-cloud,3.3998193740844727,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The first tool call to historical_genealogy_lookup omitted required parameters (figure_name and data_sources), causing an error before any useful information was retrieved.""
+}"
+TH_0146,TOOLHOP_8746b7e5d534,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.96,"The genealogy_query tool returned an error (no records) on the first call, and the assistant failed to recover, repeating the call and eventually guessing an answer.",True,,gpt-oss:120b-cloud,3.5054280757904053,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The genealogy_query tool returned an error (no records) on the first call, and the assistant failed to recover, repeating the call and eventually guessing an answer.""
+}"
+TH_0147,TOOLHOP_89a1c105a472,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.96,"The assistant called historical_genealogy_lookup with an unsupported argument 'name', causing a TypeError; the tool does not accept that parameter, indicating invented/incorrect arguments.",True,,gpt-oss:120b-cloud,2.7107603549957275,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called historical_genealogy_lookup with an unsupported argument 'name', causing a TypeError; the tool does not accept that parameter, indicating invented/incorrect arguments.""
+}"
+TH_0148,TOOLHOP_8a1beaee63fe,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly interpreted the query, selected appropriate tools, provided valid parameters, and each tool call succeeded, leading to a coherent final answer.",True,,gpt-oss:120b-cloud,1.4972271919250488,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly interpreted the query, selected appropriate tools, provided valid parameters, and each tool call succeeded, leading to a coherent final answer.""
+}"
+TH_0149,TOOLHOP_8a279e5c5354,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.96,"The assistant called relationship_identifier with an unsupported parameter 'relationship_type': 'spouse', which the tool flagged as invalid.",True,,gpt-oss:120b-cloud,2.4498660564422607,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called relationship_identifier with an unsupported parameter 'relationship_type': 'spouse', which the tool flagged as invalid.""
+}"
+TH_0150,TOOLHOP_8b4753ed1cb2,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.9,"The assistant called historical_figure_info with an unsupported 'information_type' value ('basic'), causing an immediate tool error.",True,,gpt-oss:120b-cloud,2.248384714126587,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called historical_figure_info with an unsupported 'information_type' value ('basic'), causing an immediate tool error.""
+}"
+TH_0151,TOOLHOP_8d163d76c569,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Intent Misunderstanding,2.0,0.85,"The assistant interpreted the request as needing the father’s name (using relation_type ""parentage"") instead of the paternal grandfather’s first name, leading to irrelevant genealogical lookups and an incorrect final answer.",True,,gpt-oss:120b-cloud,3.7327957153320312,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.85,
+  ""reason"": ""The assistant interpreted the request as needing the father’s name (using relation_type \""parentage\"") instead of the paternal grandfather’s first name, leading to irrelevant genealogical lookups and an incorrect final answer.""
+}"
+TH_0152,TOOLHOP_8d6f9131366d,8,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.97,"The assistant called biographical_relationship_finder with an empty contextual_information dict, missing the required ""include"" key, causing a parameter validation error.",True,,gpt-oss:120b-cloud,2.908759355545044,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called biographical_relationship_finder with an empty contextual_information dict, missing the required \""include\"" key, causing a parameter validation error.""
+}"
+TH_0153,TOOLHOP_8de23aaaec61,8,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.93,"The assistant called biographical_info_retriever without providing a valid 'name' parameter (empty string), causing the tool to error. Supplying an empty or null name is an invalid/unsupported argument.",True,,gpt-oss:120b-cloud,3.928459405899048,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant called biographical_info_retriever without providing a valid 'name' parameter (empty string), causing the tool to error. Supplying an empty or null name is an invalid/unsupported argument.""
+}"
+TH_0154,TOOLHOP_8e6b8a73bce7,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.97,"The assistant called relationship_finder with an unsupported relationship_type value ""maternal grandmother"", which the tool rejected as invalid.",True,,gpt-oss:120b-cloud,2.271554470062256,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called relationship_finder with an unsupported relationship_type value \""maternal grandmother\"", which the tool rejected as invalid.""
+}"
+TH_0155,TOOLHOP_8effee409c62,2,COMPLETED,NATURAL_COMPLETION,False,Intent Misunderstanding,6.0,0.85,"The assistant correctly identified the actor and role, but produced an incorrect reversed first name ('modleS' instead of the correct 'modesl'), indicating a misunderstanding of the required string reversal.",True,,gpt-oss:120b-cloud,3.5909576416015625,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.85,
+  ""reason"": ""The assistant correctly identified the actor and role, but produced an incorrect reversed first name ('modleS' instead of the correct 'modesl'), indicating a misunderstanding of the required string reversal.""
+}"
+TH_0156,TOOLHOP_8ff059157542,9,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.96,"The agent called historical_family_query with an unsupported relationship_type 'paternal grandmother', which is not among the tool's valid options, leading to an error.",True,,gpt-oss:120b-cloud,3.350640058517456,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The agent called historical_family_query with an unsupported relationship_type 'paternal grandmother', which is not among the tool's valid options, leading to an error.""
+}"
+TH_0157,TOOLHOP_902ba3cda188,1,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly called the appropriate tool with valid parameters, used the returned role ""Seldom Jackson"", extracted the first name ""Seldom"", alphabetically sorted its letters to produce ""delmos"", which matches the expected result.",True,,gpt-oss:120b-cloud,2.109531879425049,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly called the appropriate tool with valid parameters, used the returned role \""Seldom Jackson\"", extracted the first name \""Seldom\"", alphabetically sorted its letters to produce \""delmos\"", which matches the expected result.""
+}"
+TH_0158,TOOLHOP_90af7edbfd8a,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant passed an unsupported value 'paternal_grandfather' for the 'relationship_type' argument, which is not among the allowed options, causing the tool to error.",True,,gpt-oss:120b-cloud,1.8059418201446533,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant passed an unsupported value 'paternal_grandfather' for the 'relationship_type' argument, which is not among the allowed options, causing the tool to error.""
+}"
+TH_0159,TOOLHOP_918fc64d3247,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.96,"The assistant called the correct tool but supplied unsupported arguments (e.g., 'database', 'handle_ambiguities'), causing a TypeError on the first tool call.",True,,gpt-oss:120b-cloud,1.7584857940673828,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called the correct tool but supplied unsupported arguments (e.g., 'database', 'handle_ambiguities'), causing a TypeError on the first tool call.""
+}"
+TH_0160,TOOLHOP_91afc4c29170,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,6.0,0.95,"The assistant called game_appearance_finder with an unsupported game_type value ['WWE'], which the tool rejected as invalid, indicating a hallucinated/incorrect parameter.",True,,gpt-oss:120b-cloud,4.119113206863403,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant called game_appearance_finder with an unsupported game_type value ['WWE'], which the tool rejected as invalid, indicating a hallucinated/incorrect parameter.""
+}"
+TH_0161,TOOLHOP_91eb375e8e71,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The appropriate film_info_retriever tool was called but returned an error ('Film not found'), and the assistant proceeded without handling the failure, causing downstream incorrect actions.",True,,gpt-oss:120b-cloud,1.8082308769226074,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The appropriate film_info_retriever tool was called but returned an error ('Film not found'), and the assistant proceeded without handling the failure, causing downstream incorrect actions.""
+}"
+TH_0162,TOOLHOP_93acc66a6e5f,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.98,"The assistant correctly identified Obama's 2008 opponent, retrieved a child, extracted the last name, and counted vowels without any misinterpretation, wrong tool, bad parameters, or execution errors.",True,,gpt-oss:120b-cloud,1.574887752532959,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.98,
+  ""reason"": ""The assistant correctly identified Obama's 2008 opponent, retrieved a child, extracted the last name, and counted vowels without any misinterpretation, wrong tool, bad parameters, or execution errors.""
+}"
+TH_0163,TOOLHOP_96086e4f73c9,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the actress (Natalie Wood), retrieved her sibling (Lana Wood), and extracted the last letter of the sibling's first name ('a') without any tool misuse or errors.",True,,gpt-oss:120b-cloud,1.36751127243042,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the actress (Natalie Wood), retrieved her sibling (Lana Wood), and extracted the last letter of the sibling's first name ('a') without any tool misuse or errors.""
+}"
+TH_0164,TOOLHOP_96e388c0b3b7,10,COMPLETED_FORCED_FINALIZE,SOFT_TOOL_CALL_THRESHOLD,True,Intent Misunderstanding,2.0,0.93,"The assistant first called biographical_info_retriever for Cosima Von Bülow Pavoncelli's own death_date, whereas the user asked for the death date of her father, indicating a misunderstanding of the task.",True,,gpt-oss:120b-cloud,1.9443402290344238,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant first called biographical_info_retriever for Cosima Von Bülow Pavoncelli's own death_date, whereas the user asked for the death date of her father, indicating a misunderstanding of the task.""
+}"
+TH_0165,TOOLHOP_9741f79aca77,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The appropriate tool was called but returned an error ('Scientist not identified'), and the assistant failed to recover, repeatedly calling the same tool and finally outputting an answer without evidence.",True,,gpt-oss:120b-cloud,2.169440984725952,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The appropriate tool was called but returned an error ('Scientist not identified'), and the assistant failed to recover, repeatedly calling the same tool and finally outputting an answer without evidence.""
+}"
+TH_0166,TOOLHOP_97705a95fdc2,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the director, retrieved the spouse's name, extracted the last name, and reversed its letters, providing a coherent answer without any misinterpretation, wrong tool use, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,1.4834983348846436,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the director, retrieved the spouse's name, extracted the last name, and reversed its letters, providing a coherent answer without any misinterpretation, wrong tool use, parameter errors, or execution issues.""
+}"
+TH_0167,TOOLHOP_98fbc42faedc,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.98,"The assistant correctly identified the common actor, retrieved the correct birth year, and computed the concatenation of the second and third digits (96) without any tool misuse or parameter errors.",True,,gpt-oss:120b-cloud,1.5493834018707275,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.98,
+  ""reason"": ""The assistant correctly identified the common actor, retrieved the correct birth year, and computed the concatenation of the second and third digits (96) without any tool misuse or parameter errors.""
+}"
+TH_0168,TOOLHOP_9a3d6127374a,8,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant called historical_family_finder with relationship_type set to ""paternal_grandfather"", which is not a valid option for the tool, leading to an error.",True,,gpt-oss:120b-cloud,2.255492925643921,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called historical_family_finder with relationship_type set to \""paternal_grandfather\"", which is not a valid option for the tool, leading to an error.""
+}"
+TH_0169,TOOLHOP_9a70776c7433,3,COMPLETED,NATURAL_COMPLETION,False,Wrong Tool Selection,4.0,0.96,"The assistant attempted to retrieve Wolfgang Porsche's birthday using the relationship_finder tool with an unsupported relationship_type 'birthday', which is not a valid operation for that tool.",True,,gpt-oss:120b-cloud,1.8186867237091064,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant attempted to retrieve Wolfgang Porsche's birthday using the relationship_finder tool with an unsupported relationship_type 'birthday', which is not a valid operation for that tool.""
+}"
+TH_0170,TOOLHOP_9c676e003b89,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.95,"The assistant called the appropriate tool but used unsupported 'information_type' values (e.g., 'death_year', 'basic', 'death'), causing immediate tool errors.",True,,gpt-oss:120b-cloud,2.275108814239502,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant called the appropriate tool but used unsupported 'information_type' values (e.g., 'death_year', 'basic', 'death'), causing immediate tool errors.""
+}"
+TH_0171,TOOLHOP_9d323717c1d5,9,COMPLETED,NATURAL_COMPLETION,False,Intent Misunderstanding,12.0,0.93,"The agent extracts the last name from ""Yujiulü Doulun"" instead of from his paternal grandfather, misinterpreting the required entity despite earlier attempts to retrieve the grandfather's information.",True,,gpt-oss:120b-cloud,2.39300537109375,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 12,
+  ""confidence"": 0.93,
+  ""reason"": ""The agent extracts the last name from \""Yujiulü Doulun\"" instead of from his paternal grandfather, misinterpreting the required entity despite earlier attempts to retrieve the grandfather's information.""
+}"
+TH_0172,TOOLHOP_9d4650d4e894,6,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,7.0,0.96,"The assistant supplied an unsupported 'cultural_convention' argument to the extract_last_name tool, causing an error.",True,,gpt-oss:120b-cloud,1.8241839408874512,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant supplied an unsupported 'cultural_convention' argument to the extract_last_name tool, causing an error.""
+}"
+TH_0173,TOOLHOP_9d6ad3cc125c,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,7.0,0.97,"The assistant called extract_last_name with an unsupported argument 'include_metadata', causing a tool error.",True,,gpt-oss:120b-cloud,4.027193546295166,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called extract_last_name with an unsupported argument 'include_metadata', causing a tool error.""
+}"
+TH_0174,TOOLHOP_9d8974baddfc,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,6.0,0.9,"The assistant called prime_factorization with an invalid 'performance_mode' value ('Standard'), causing the tool to return an error.",True,,gpt-oss:120b-cloud,1.967935562133789,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called prime_factorization with an invalid 'performance_mode' value ('Standard'), causing the tool to return an error.""
+}"
+TH_0175,TOOLHOP_9d94ce174298,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified a cricketer using the appropriate tool, retrieved the birth date, calculated 6 weeks later, and provided a coherent answer without any evident misinterpretation, wrong tool, parameter issues, or execution errors.",True,,gpt-oss:120b-cloud,1.8395156860351562,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified a cricketer using the appropriate tool, retrieved the birth date, calculated 6 weeks later, and provided a coherent answer without any evident misinterpretation, wrong tool, parameter issues, or execution errors.""
+}"
+TH_0176,TOOLHOP_9e071a3a594a,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the series ""The Middle"", retrieved its premiere date, added 10 years using the date calculator, and provided the correct resulting date.",True,,gpt-oss:120b-cloud,1.5361740589141846,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the series \""The Middle\"", retrieved its premiere date, added 10 years using the date calculator, and provided the correct resulting date.""
+}"
+TH_0177,TOOLHOP_9f682df24566,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant called historical_bio_lookup with an unsupported data point ""father_name"", which the tool flagged as invalid, indicating invented/incorrect parameters.",True,,gpt-oss:120b-cloud,2.739058494567871,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called historical_bio_lookup with an unsupported data point \""father_name\"", which the tool flagged as invalid, indicating invented/incorrect parameters.""
+}"
+TH_0178,TOOLHOP_a093a39de68a,9,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant called historical_family_finder with a relationship_type value ('paternal grandfather') that is not among the tool's allowed options, causing an immediate parameter validation error.",True,,gpt-oss:120b-cloud,2.1106131076812744,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called historical_family_finder with a relationship_type value ('paternal grandfather') that is not among the tool's allowed options, causing an immediate parameter validation error.""
+}"
+TH_0179,TOOLHOP_a0d04378f379,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The agent correctly identified the director, found his father, extracted the father's first name, took the lowercase first letter, and converted it to the correct 8-bit ASCII binary representation.",True,,gpt-oss:120b-cloud,2.283912420272827,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The agent correctly identified the director, found his father, extracted the father's first name, took the lowercase first letter, and converted it to the correct 8-bit ASCII binary representation.""
+}"
+TH_0180,TOOLHOP_a1422e6a1686,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,3.0,0.97,"The assistant supplied an invalid value for the 'source' parameter in the first sponsorship_info_retriever call, causing the tool to return an error about an invalid source.",True,,gpt-oss:120b-cloud,2.283057689666748,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant supplied an invalid value for the 'source' parameter in the first sponsorship_info_retriever call, causing the tool to return an error about an invalid source.""
+}"
+TH_0181,TOOLHOP_a1496d4ad0a3,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the mother (Queen Mathilde), retrieved her birth date, added three months, and provided the correct result; all tool selections and parameters were appropriate.",True,,gpt-oss:120b-cloud,1.9067461490631104,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the mother (Queen Mathilde), retrieved her birth date, added three months, and provided the correct result; all tool selections and parameters were appropriate.""
+}"
+TH_0182,TOOLHOP_a17554a0d2b1,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the division (AFC North), retrieved its name adoption year (2002), and provided the year before (2001) without any tool misuse or parameter errors.",True,,gpt-oss:120b-cloud,1.5697598457336426,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the division (AFC North), retrieved its name adoption year (2002), and provided the year before (2001) without any tool misuse or parameter errors.""
+}"
+TH_0183,TOOLHOP_a3d12597f93e,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.9,"The assistant called historical_event_date_retriever with an empty date_range dict, which the tool requires to contain start_year and end_year, leading to an error.",True,,gpt-oss:120b-cloud,2.7608087062835693,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called historical_event_date_retriever with an empty date_range dict, which the tool requires to contain start_year and end_year, leading to an error.""
+}"
+TH_0184,TOOLHOP_a4c36ded9dbf,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant called the game_identifier tool with invented/incorrect parameters (e.g., developer ""Paradigm Entertainment"") that do not correspond to the actual 2003 remake, leading to immediate 'Game not found' errors.",True,,gpt-oss:120b-cloud,2.663846492767334,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called the game_identifier tool with invented/incorrect parameters (e.g., developer \""Paradigm Entertainment\"") that do not correspond to the actual 2003 remake, leading to immediate 'Game not found' errors.""
+}"
+TH_0185,TOOLHOP_a51c55ccd92d,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.7,"The first call to resolution_sponsor_finder_v2 omitted the required 'date_range' fields, causing a tool error; this reflects incorrect/missing parameters.",True,,gpt-oss:120b-cloud,4.290766000747681,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.7,
+  ""reason"": ""The first call to resolution_sponsor_finder_v2 omitted the required 'date_range' fields, causing a tool error; this reflects incorrect/missing parameters.""
+}"
+TH_0186,TOOLHOP_a785bdbf3c99,3,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant called publication_metadata_retriever with an invalid metadata_type ('publisher_founding_year'), which the tool does not support, indicating fabricated/incorrect parameters.",True,,gpt-oss:120b-cloud,1.6621544361114502,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called publication_metadata_retriever with an invalid metadata_type ('publisher_founding_year'), which the tool does not support, indicating fabricated/incorrect parameters.""
+}"
+TH_0187,TOOLHOP_a85f2d02e23c,5,COMPLETED,NATURAL_COMPLETION,False,Intent Misunderstanding,2.0,0.97,"The assistant counted two‑letter combinations in ""Earnhardt"" (Kerry's own last name) instead of first determining the paternal grandfather's last name, showing a fundamental misinterpretation of the user's request.",True,,gpt-oss:120b-cloud,1.339320421218872,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant counted two‑letter combinations in \""Earnhardt\"" (Kerry's own last name) instead of first determining the paternal grandfather's last name, showing a fundamental misinterpretation of the user's request.""
+}"
+TH_0188,TOOLHOP_a93c16832314,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant called biographical_relationship_finder_v2 with an unsupported relationship_type value ""father-in-law"", which the tool rejected as invalid.",True,,gpt-oss:120b-cloud,2.5090432167053223,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called biographical_relationship_finder_v2 with an unsupported relationship_type value \""father-in-law\"", which the tool rejected as invalid.""
+}"
+TH_0189,TOOLHOP_ac3478d69a3c,2,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.97,"The assistant supplied an invented year (1943) to the palindrome finder without any evidence from the previous tool output, which only gave a vague time period ""1930s-1940s"".",True,,gpt-oss:120b-cloud,2.52898907661438,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant supplied an invented year (1943) to the palindrome finder without any evidence from the previous tool output, which only gave a vague time period \""1930s-1940s\"".""
+}"
+TH_0190,TOOLHOP_ac9c95776042,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,2.0,0.75,"The tool call returned no matching relationships, providing unusable information, and the assistant repeatedly made similar calls without adapting, leading to a cascade of ineffective actions.",True,,gpt-oss:120b-cloud,3.7924764156341553,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.75,
+  ""reason"": ""The tool call returned no matching relationships, providing unusable information, and the assistant repeatedly made similar calls without adapting, leading to a cascade of ineffective actions.""
+}"
+TH_0191,TOOLHOP_acf10f2c0a9d,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,5.0,0.9,"The appropriate tool was called with reasonable parameters, but it returned an error (no matching historical event). The agent failed to recover, leading to subsequent unsuccessful calls.",True,,gpt-oss:120b-cloud,2.079627513885498,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.9,
+  ""reason"": ""The appropriate tool was called with reasonable parameters, but it returned an error (no matching historical event). The agent failed to recover, leading to subsequent unsuccessful calls.""
+}"
+TH_0192,TOOLHOP_acfdd18ea7f4,1,COMPLETED,NATURAL_COMPLETION,False,Intent Misunderstanding,2.0,0.95,"The assistant never attempts to identify Kerry Earnhardt's paternal grandfather or his last name, instead directly assuming the target letter is 'd' and converting it to binary, showing a fundamental misunderstanding of the required information gathering.",True,,gpt-oss:120b-cloud,1.582939624786377,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant never attempts to identify Kerry Earnhardt's paternal grandfather or his last name, instead directly assuming the target letter is 'd' and converting it to binary, showing a fundamental misunderstanding of the required information gathering.""
+}"
+TH_0193,TOOLHOP_ae5ffa6599c8,5,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly retrieved the director, identified the father, extracted first and last names, and calculated the combined length without any tool misuse or errors.",True,,gpt-oss:120b-cloud,2.2164793014526367,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly retrieved the director, identified the father, extracted first and last names, and calculated the combined length without any tool misuse or errors.""
+}"
+TH_0194,TOOLHOP_aeaa8a872d9d,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Wrong Tool Selection,4.0,0.97,"The assistant switched to the biographical_data_retriever tool, which is meant for a figure's own biographical fields and requires specific data_type values. The user asked for the death date of the mother, so this tool is inappropriate and the provided data_type ""full"" is invalid.",True,,gpt-oss:120b-cloud,2.2254600524902344,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant switched to the biographical_data_retriever tool, which is meant for a figure's own biographical fields and requires specific data_type values. The user asked for the death date of the mother, so this tool is inappropriate and the provided data_type \""full\"" is invalid.""
+}"
+TH_0195,TOOLHOP_af53d4aa0b91,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.9,"The assistant called biographical_info_retriever with an invalid 'query_type' value ('full biography' instead of the allowed 'full_biography'), causing the tool to reject the request.",True,,gpt-oss:120b-cloud,1.9820356369018555,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called biographical_info_retriever with an invalid 'query_type' value ('full biography' instead of the allowed 'full_biography'), causing the tool to reject the request.""
+}"
+TH_0196,TOOLHOP_af7166a5d6dd,5,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.96,"The agent correctly interpreted the task, selected appropriate tools, provided valid parameters, and the tool calls succeeded, yielding a coherent answer.",True,,gpt-oss:120b-cloud,2.2220804691314697,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.96,
+  ""reason"": ""The agent correctly interpreted the task, selected appropriate tools, provided valid parameters, and the tool calls succeeded, yielding a coherent answer.""
+}"
+TH_0197,TOOLHOP_b1b986990332,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.95,"The author_lookup tool returned an error (author not found) and the assistant did not handle the failure, repeatedly calling the same tool and finally providing an answer without evidence.",True,,gpt-oss:120b-cloud,1.9379029273986816,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.95,
+  ""reason"": ""The author_lookup tool returned an error (author not found) and the assistant did not handle the failure, repeatedly calling the same tool and finally providing an answer without evidence.""
+}"
+TH_0198,TOOLHOP_b1d5781111d8,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the playwright, retrieved the birth year, calculated the difference with 2024, and produced the correct result without any missteps.",True,,gpt-oss:120b-cloud,1.1884446144104004,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the playwright, retrieved the birth year, calculated the difference with 2024, and produced the correct result without any missteps.""
+}"
+TH_0199,TOOLHOP_b37f6ddcefad,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.9,"The assistant called enhanced_filmography_search with an empty 'years' list (and later with empty 'character_names'), which violates the tool's required parameters, leading to immediate errors.",True,,gpt-oss:120b-cloud,3.0973548889160156,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called enhanced_filmography_search with an empty 'years' list (and later with empty 'character_names'), which violates the tool's required parameters, leading to immediate errors.""
+}"
+TH_0200,TOOLHOP_b3be0e5932b8,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The first tool call (geo_locator) returned an error ""Location not found in the database,"" indicating an execution failure that prevents the agent from obtaining the needed geographic information and leads to subsequent ineffective calls.",True,,gpt-oss:120b-cloud,3.178511619567871,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The first tool call (geo_locator) returned an error \""Location not found in the database,\"" indicating an execution failure that prevents the agent from obtaining the needed geographic information and leads to subsequent ineffective calls.""
+}"
+TH_0201,TOOLHOP_b4ef7df17d3d,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly retrieved the director, identified the mother, and accurately counted the occurrences of 's' in the mother's last name using appropriate tools and parameters.",True,,gpt-oss:120b-cloud,1.8365209102630615,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly retrieved the director, identified the mother, and accurately counted the occurrences of 's' in the mother's last name using appropriate tools and parameters.""
+}"
+TH_0202,TOOLHOP_b6692ea5df92,9,COMPLETED,NATURAL_COMPLETION,False,Wrong Tool Selection,4.0,0.93,"The assistant called biographical_info_retriever with information_type ""full_name"", which the tool does not support, leading to an error before any correct data was obtained.",True,,gpt-oss:120b-cloud,2.9826877117156982,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant called biographical_info_retriever with information_type \""full_name\"", which the tool does not support, leading to an error before any correct data was obtained.""
+}"
+TH_0203,TOOLHOP_b6e7a22c25e9,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.96,"The assistant called genealogy_lookup with an unsupported argument 'geographical_location', causing a TypeError. This indicates invented/incorrect parameters.",True,,gpt-oss:120b-cloud,1.7890815734863281,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called genealogy_lookup with an unsupported argument 'geographical_location', causing a TypeError. This indicates invented/incorrect parameters.""
+}"
+TH_0204,TOOLHOP_b7103ca278a7,8,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,8.0,0.9,"The assistant called celebrity_identifier without required 'nationality' and 'role' parameters, causing a tool error.",True,,gpt-oss:120b-cloud,2.1738927364349365,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called celebrity_identifier without required 'nationality' and 'role' parameters, causing a tool error.""
+}"
+TH_0205,TOOLHOP_b903ea6300ff,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,8.0,0.96,"The assistant introduced a new person name ""Barbara Bach"" not present in the earlier cast list, inventing a parameter for the historical_relationship_query tool.",True,,gpt-oss:120b-cloud,2.318847179412842,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant introduced a new person name \""Barbara Bach\"" not present in the earlier cast list, inventing a parameter for the historical_relationship_query tool.""
+}"
+TH_0206,TOOLHOP_ba30fd97b412,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the director, retrieved the spouse, extracted the last name, and accurately counted the letter 'l' without any tool misuse or errors.",True,,gpt-oss:120b-cloud,1.4807846546173096,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the director, retrieved the spouse, extracted the last name, and accurately counted the letter 'l' without any tool misuse or errors.""
+}"
+TH_0207,TOOLHOP_ba613d1fc0d9,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.97,"The assistant supplied an unsupported 'relationship' value ('paternal grandmother') to the historical_genealogy_search tool, which immediately returned an error indicating the parameter is invalid.",True,,gpt-oss:120b-cloud,1.8386287689208984,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant supplied an unsupported 'relationship' value ('paternal grandmother') to the historical_genealogy_search tool, which immediately returned an error indicating the parameter is invalid.""
+}"
+TH_0208,TOOLHOP_baab34018148,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant provided invalid relationship_type values (e.g., ""father-in-law"") to the sports_figure_family_info tool, which the tool rejected as an invalid parameter.",True,,gpt-oss:120b-cloud,2.761237859725952,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant provided invalid relationship_type values (e.g., \""father-in-law\"") to the sports_figure_family_info tool, which the tool rejected as an invalid parameter.""
+}"
+TH_0209,TOOLHOP_bc60205da255,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant called genealogy_query without required parameters (e.g., missing 'include'), causing a KeyError on the tool call.",True,,gpt-oss:120b-cloud,1.8901667594909668,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called genealogy_query without required parameters (e.g., missing 'include'), causing a KeyError on the tool call.""
+}"
+TH_0210,TOOLHOP_bc62305b6cff,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the publisher, retrieved its founding year, reversed the number, subtracted 3, and produced the correct result without any tool misuse or errors.",True,,gpt-oss:120b-cloud,1.4718983173370361,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the publisher, retrieved its founding year, reversed the number, subtracted 3, and produced the correct result without any tool misuse or errors.""
+}"
+TH_0211,TOOLHOP_bcf814ab4150,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.97,"The assistant calls the relationship_identifier tool with an unsupported argument 'relationship_type': 'stepmother', causing the tool to return an error. This indicates incorrect parameters supplied to an otherwise appropriate tool.",True,,gpt-oss:120b-cloud,2.344055414199829,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant calls the relationship_identifier tool with an unsupported argument 'relationship_type': 'stepmother', causing the tool to return an error. This indicates incorrect parameters supplied to an otherwise appropriate tool.""
+}"
+TH_0212,TOOLHOP_be461a0cd1fd,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,7.0,0.9,"The assistant called biographical_info_retriever with an invalid information_type ('nationality'), which is not supported by the tool, indicating malformed/incorrect parameters.",True,,gpt-oss:120b-cloud,3.717275857925415,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called biographical_info_retriever with an invalid information_type ('nationality'), which is not supported by the tool, indicating malformed/incorrect parameters.""
+}"
+TH_0213,TOOLHOP_be4d979ef980,5,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the publisher (United Nations), retrieved its founding year (1945), extracted first and last digits, concatenated them, and produced the correct result without any misinterpretation, wrong tool, or parameter errors.",True,,gpt-oss:120b-cloud,1.6010627746582031,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the publisher (United Nations), retrieved its founding year (1945), extracted first and last digits, concatenated them, and produced the correct result without any misinterpretation, wrong tool, or parameter errors.""
+}"
+TH_0214,TOOLHOP_beba4d5d3ffb,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the publisher, retrieved its founding year, and computed the previous year using appropriate tools and valid parameters without any errors.",True,,gpt-oss:120b-cloud,1.7127323150634766,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the publisher, retrieved its founding year, and computed the previous year using appropriate tools and valid parameters without any errors.""
+}"
+TH_0215,TOOLHOP_c097638f92de,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,12.0,0.78,"After obtaining the cast list, the assistant repeatedly called movie_cast_lookup with identical arguments (turn 12) instead of using the existing information, causing a loop of redundant tool calls and leading to forced finalization.",True,,gpt-oss:120b-cloud,5.437503814697266,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 12,
+  ""confidence"": 0.78,
+  ""reason"": ""After obtaining the cast list, the assistant repeatedly called movie_cast_lookup with identical arguments (turn 12) instead of using the existing information, causing a loop of redundant tool calls and leading to forced finalization.""
+}"
+TH_0216,TOOLHOP_c2145e337ae6,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,3.0,0.97,"The first call to book_author_lookup used an invalid 'publication_year_range' (empty list), causing the tool to return an error. This malformed parameter constitutes a parameter hallucination.",True,,gpt-oss:120b-cloud,1.8483195304870605,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The first call to book_author_lookup used an invalid 'publication_year_range' (empty list), causing the tool to return an error. This malformed parameter constitutes a parameter hallucination.""
+}"
+TH_0217,TOOLHOP_c28097ad29ab,6,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.9,"The assistant called genealogy_query with an unsupported relationship_type value ""paternal_grandfather"", which is not among the tool's allowed options, causing an immediate error.",True,,gpt-oss:120b-cloud,1.5728342533111572,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called genealogy_query with an unsupported relationship_type value \""paternal_grandfather\"", which is not among the tool's allowed options, causing an immediate error.""
+}"
+TH_0218,TOOLHOP_c2fc6ebf83d1,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the author, retrieved the education place, and extracted the last vowel, producing the correct answer without any misinterpretation, tool misuse, parameter errors, or execution issues.",True,,gpt-oss:120b-cloud,1.7763473987579346,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the author, retrieved the education place, and extracted the last vowel, producing the correct answer without any misinterpretation, tool misuse, parameter errors, or execution issues.""
+}"
+TH_0219,TOOLHOP_c32a67a05e6b,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.95,"The assistant called the appropriate tool but supplied unsupported arguments like 'accuracy_level' and 'data_source', causing a TypeError.",True,,gpt-oss:120b-cloud,2.304030418395996,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant called the appropriate tool but supplied unsupported arguments like 'accuracy_level' and 'data_source', causing a TypeError.""
+}"
+TH_0220,TOOLHOP_c35a9fc52bb5,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"All tool calls are appropriate, parameters are correct, and the final answer matches the requested lowercase first letter.",True,,gpt-oss:120b-cloud,1.756056547164917,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""All tool calls are appropriate, parameters are correct, and the final answer matches the requested lowercase first letter.""
+}"
+TH_0221,TOOLHOP_c415505dca69,10,COMPLETED_FORCED_FINALIZE,SOFT_TOOL_CALL_THRESHOLD,True,Wrong Tool Selection,2.0,0.97,"The assistant calls a non-existent tool 'historical_genealogy_query', which immediately returns 'Unknown', indicating an inappropriate tool choice early in the trajectory.",True,,gpt-oss:120b-cloud,3.045833110809326,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant calls a non-existent tool 'historical_genealogy_query', which immediately returns 'Unknown', indicating an inappropriate tool choice early in the trajectory.""
+}"
+TH_0222,TOOLHOP_c44201fe5bac,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the painter (David Bomberg), retrieved his study place (Slade School of Art), and accurately counted the consonants (10) using appropriate tools and parameters.",True,,gpt-oss:120b-cloud,1.7195384502410889,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the painter (David Bomberg), retrieved his study place (Slade School of Art), and accurately counted the consonants (10) using appropriate tools and parameters.""
+}"
+TH_0223,TOOLHOP_c837307a9a2a,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.9,"The assistant used the correct biographical_info_retriever tool but supplied an incorrect 'database' argument ('sports') for a musician, which is an unsupported/incorrect parameter.",True,,gpt-oss:120b-cloud,2.4389500617980957,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant used the correct biographical_info_retriever tool but supplied an incorrect 'database' argument ('sports') for a musician, which is an unsupported/incorrect parameter.""
+}"
+TH_0224,TOOLHOP_c8c06cfae2f5,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,5.0,0.9,"The assistant called biographical_data_retriever with an unsupported data_source value ""default"", causing a tool error; this is an invalid parameter.",True,,gpt-oss:120b-cloud,2.4588961601257324,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called biographical_data_retriever with an unsupported data_source value \""default\"", causing a tool error; this is an invalid parameter.""
+}"
+TH_0225,TOOLHOP_c99a2a26bd03,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.9,"The first tool call to family_relationship_finder omitted required parameters (data_sources) and used an unsupported relationship_type ('maternal grandmother'), leading to immediate tool errors.",True,,gpt-oss:120b-cloud,2.5544936656951904,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The first tool call to family_relationship_finder omitted required parameters (data_sources) and used an unsupported relationship_type ('maternal grandmother'), leading to immediate tool errors.""
+}"
+TH_0226,TOOLHOP_c9a4b8932ab9,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant called resolution_sponsor_finder without providing the required parameters (resolution_title and primary_sponsor), leading to an immediate tool error.",True,,gpt-oss:120b-cloud,4.5096142292022705,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called resolution_sponsor_finder without providing the required parameters (resolution_title and primary_sponsor), leading to an immediate tool error.""
+}"
+TH_0227,TOOLHOP_c9ca44276565,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,5.0,0.97,"The assistant selected the appropriate tool and provided reasonable parameters, but the tool returned an error on the first call, and the assistant failed to recover, leading to a cascade of unsuccessful attempts.",True,,gpt-oss:120b-cloud,2.6191580295562744,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant selected the appropriate tool and provided reasonable parameters, but the tool returned an error on the first call, and the assistant failed to recover, leading to a cascade of unsuccessful attempts.""
+}"
+TH_0228,TOOLHOP_c9f13c161440,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant called historical_genealogy_lookup with unsupported arguments (e.g., 'include_extended_family' and 'region'), causing a TypeError, indicating incorrect parameters were supplied.",True,,gpt-oss:120b-cloud,2.7603156566619873,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called historical_genealogy_lookup with unsupported arguments (e.g., 'include_extended_family' and 'region'), causing a TypeError, indicating incorrect parameters were supplied.""
+}"
+TH_0229,TOOLHOP_ca3512f4dfa9,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the co‑star (Brittany Snow), retrieved her birth year (1986), summed the digits (24) and cubed the sum (13824) with appropriate tool usage and parameters.",True,,gpt-oss:120b-cloud,1.9916269779205322,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the co‑star (Brittany Snow), retrieved her birth year (1986), summed the digits (24) and cubed the sum (13824) with appropriate tool usage and parameters.""
+}"
+TH_0230,TOOLHOP_cb4dd52770e2,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The first genealogy_search call omitted the required 'database_sources' argument, causing the tool to return an error.",True,,gpt-oss:120b-cloud,3.393256664276123,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The first genealogy_search call omitted the required 'database_sources' argument, causing the tool to return an error.""
+}"
+TH_0231,TOOLHOP_cb6c53bcb82b,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the publisher, retrieved its founding year, extracted the first and last digits, and concatenated them, fulfilling the user's request without observable errors.",True,,gpt-oss:120b-cloud,1.3068103790283203,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the publisher, retrieved its founding year, extracted the first and last digits, and concatenated them, fulfilling the user's request without observable errors.""
+}"
+TH_0232,TOOLHOP_cc8cd1ceed58,8,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,3.0,0.97,"The first tool call (Turn 2) to relationship_finder provides an invalid parameter (empty data_source), causing the tool to return an error about missing required parameters. This malformed argument is the earliest observable failure.",True,,gpt-oss:120b-cloud,2.561142921447754,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The first tool call (Turn 2) to relationship_finder provides an invalid parameter (empty data_source), causing the tool to return an error about missing required parameters. This malformed argument is the earliest observable failure.""
+}"
+TH_0233,TOOLHOP_cce637a738ce,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the longest reigning British monarch, retrieved the spouse's full name, extracted the first name, and provided the correct answer without any tool misuse or errors.",True,,gpt-oss:120b-cloud,1.2745869159698486,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the longest reigning British monarch, retrieved the spouse's full name, extracted the first name, and provided the correct answer without any tool misuse or errors.""
+}"
+TH_0234,TOOLHOP_cf3240611190,10,COMPLETED_FORCED_FINALIZE,SOFT_TOOL_CALL_THRESHOLD,True,Parameter Hallucination,3.0,0.97,"The assistant called genealogy_lookup with unsupported arguments (e.g., 'data_source'), causing a TypeError. This indicates invented or malformed parameters, the earliest observable failure.",True,,gpt-oss:120b-cloud,1.9106419086456299,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called genealogy_lookup with unsupported arguments (e.g., 'data_source'), causing a TypeError. This indicates invented or malformed parameters, the earliest observable failure.""
+}"
+TH_0235,TOOLHOP_d0226f9e35da,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.9,"The assistant included an unsupported 'output_format' argument in the publication_info_retriever call, causing the tool to return an error.",True,,gpt-oss:120b-cloud,1.5869157314300537,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant included an unsupported 'output_format' argument in the publication_info_retriever call, causing the tool to return an error.""
+}"
+TH_0236,TOOLHOP_d051bf1ddf82,5,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,5.0,0.97,"The prime_factorizer tool was called with appropriate parameters but returned an empty list, an incorrect result, indicating an execution failure before the agent corrected it.",True,,gpt-oss:120b-cloud,2.3715124130249023,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.97,
+  ""reason"": ""The prime_factorizer tool was called with appropriate parameters but returned an empty list, an incorrect result, indicating an execution failure before the agent corrected it.""
+}"
+TH_0237,TOOLHOP_d094700e379f,9,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant supplied an invalid value ""death date"" for the 'information_type' parameter, which the tool does not accept, leading to an immediate error.",True,,gpt-oss:120b-cloud,2.0183186531066895,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant supplied an invalid value \""death date\"" for the 'information_type' parameter, which the tool does not accept, leading to an immediate error.""
+}"
+TH_0238,TOOLHOP_d321d6f7ccf9,6,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the architect, retrieved a sibling, extracted the first name, counted vowels and consonants, and computed the difference without any tool misuse or parameter errors.",True,,gpt-oss:120b-cloud,1.8086621761322021,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the architect, retrieved a sibling, extracted the first name, counted vowels and consonants, and computed the difference without any tool misuse or parameter errors.""
+}"
+TH_0239,TOOLHOP_d435a6cdd786,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,8.0,0.96,"The arithmetic_calculator was called with an unsupported operation value ""addition"", causing a tool error; the correct operation should be ""add"".",True,,gpt-oss:120b-cloud,2.266799211502075,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.96,
+  ""reason"": ""The arithmetic_calculator was called with an unsupported operation value \""addition\"", causing a tool error; the correct operation should be \""add\"".""
+}"
+TH_0240,TOOLHOP_d5155d043a8e,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,7.0,0.86,"At turn 7 the assistant called person_identifier with a 'role' argument as a string instead of the required list of strings, causing a tool error. This malformed parameter is the earliest observable failure.",True,,gpt-oss:120b-cloud,3.136898994445801,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.86,
+  ""reason"": ""At turn 7 the assistant called person_identifier with a 'role' argument as a string instead of the required list of strings, causing a tool error. This malformed parameter is the earliest observable failure.""
+}"
+TH_0241,TOOLHOP_d54ad009d179,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the sitcom (Superstore), used the appropriate creator's last name (Spitzer), applied the vowel_counter tool correctly, and produced the correct vowel count.",True,,gpt-oss:120b-cloud,1.7863411903381348,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the sitcom (Superstore), used the appropriate creator's last name (Spitzer), applied the vowel_counter tool correctly, and produced the correct vowel count.""
+}"
+TH_0242,TOOLHOP_d64ce8d6017f,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.96,"The assistant called genealogy_lookup with an unsupported argument 'include_details', causing a TypeError on turn 3, indicating invented/incorrect parameters.",True,,gpt-oss:120b-cloud,1.6963436603546143,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called genealogy_lookup with an unsupported argument 'include_details', causing a TypeError on turn 3, indicating invented/incorrect parameters.""
+}"
+TH_0243,TOOLHOP_d69b923df614,7,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,10.0,0.85,"The assistant supplies the input ""Siu-tien"" to the consonant counter without having obtained that name from any prior successful tool call, effectively inventing a parameter not supported by evidence.",True,,gpt-oss:120b-cloud,3.5925872325897217,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 10,
+  ""confidence"": 0.85,
+  ""reason"": ""The assistant supplies the input \""Siu-tien\"" to the consonant counter without having obtained that name from any prior successful tool call, effectively inventing a parameter not supported by evidence.""
+}"
+TH_0244,TOOLHOP_d8502b7d7748,3,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,3.0,0.96,"The assistant passed an unsupported relationship_type value ('paternal_grandfather') to the historical_family_finder tool, resulting in an error response.",True,,gpt-oss:120b-cloud,2.1367876529693604,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant passed an unsupported relationship_type value ('paternal_grandfather') to the historical_family_finder tool, resulting in an error response.""
+}"
+TH_0245,TOOLHOP_d96adb142a1f,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.93,"The assistant called genealogy_lookup with an unsupported 'relationship' value ('parent'), which is an invalid parameter according to the tool's specification.",True,,gpt-oss:120b-cloud,3.438506603240967,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant called genealogy_lookup with an unsupported 'relationship' value ('parent'), which is an invalid parameter according to the tool's specification.""
+}"
+TH_0246,TOOLHOP_da4b9237bacc,3,COMPLETED,NATURAL_COMPLETION,False,Intent Misunderstanding,2.0,0.9,"The assistant interpreted the task as retrieving only the film title, calling the tool with output_format ""title_only"", whereas the user asked for the director/writer's last name to count its consonants.",True,,gpt-oss:120b-cloud,2.55344557762146,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant interpreted the task as retrieving only the film title, calling the tool with output_format \""title_only\"", whereas the user asked for the director/writer's last name to count its consonants.""
+}"
+TH_0247,TOOLHOP_dbc0f0048544,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the show, retrieved its creator, and computed the concatenation of the last letters of the creator's first and last name without any misinterpretation, wrong tool, parameter issues, or execution errors.",True,,gpt-oss:120b-cloud,1.8905260562896729,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the show, retrieved its creator, and computed the concatenation of the last letters of the creator's first and last name without any misinterpretation, wrong tool, parameter issues, or execution errors.""
+}"
+TH_0248,TOOLHOP_dbe8ddfe63ca,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.96,"The assistant correctly interpreted the task, selected appropriate tools, provided valid parameters, and successfully extracted the required lowercase first letter without any observable errors in the trajectory.",True,,gpt-oss:120b-cloud,2.566147565841675,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant correctly interpreted the task, selected appropriate tools, provided valid parameters, and successfully extracted the required lowercase first letter without any observable errors in the trajectory.""
+}"
+TH_0249,TOOLHOP_dc51d239fbce,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.93,"The first date_calculator call provides a malformed interval argument (""months"":1) that does not match the tool's required format, causing an error before any successful execution.",True,,gpt-oss:120b-cloud,3.0585906505584717,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.93,
+  ""reason"": ""The first date_calculator call provides a malformed interval argument (\""months\"":1) that does not match the tool's required format, causing an error before any successful execution.""
+}"
+TH_0250,TOOLHOP_dca7d04102c3,2,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,4.0,0.9,"After the relationship lookup returned no data, the assistant fabricated the letter 'h' as the first letter of the grandmother's last name and passed it to the char_to_binary tool, inventing a parameter without evidence.",True,,gpt-oss:120b-cloud,1.8243730068206787,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.9,
+  ""reason"": ""After the relationship lookup returned no data, the assistant fabricated the letter 'h' as the first letter of the grandmother's last name and passed it to the char_to_binary tool, inventing a parameter without evidence.""
+}"
+TH_0251,TOOLHOP_dcd7d0e3f3c0,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,5.0,0.9,"The historical_bio_data_retriever tool, which was appropriate for obtaining the father's death date, returned 'Data not found', causing the assistant to be unable to compute the required date.",True,,gpt-oss:120b-cloud,1.9197092056274414,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.9,
+  ""reason"": ""The historical_bio_data_retriever tool, which was appropriate for obtaining the father's death date, returned 'Data not found', causing the assistant to be unable to compute the required date.""
+}"
+TH_0252,TOOLHOP_dcdee608f073,5,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,7.0,0.9,"The prime_factorizer tool, correctly selected and given the proper number (1997), returned an empty list instead of the expected prime factor(s). The agent then summed the original number, propagating the incorrect result.",True,,gpt-oss:120b-cloud,2.8777732849121094,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.9,
+  ""reason"": ""The prime_factorizer tool, correctly selected and given the proper number (1997), returned an empty list instead of the expected prime factor(s). The agent then summed the original number, propagating the incorrect result.""
+}"
+TH_0253,TOOLHOP_de8627f75ba1,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,6.0,0.95,"The assistant called 'historical_relationship_finder' with a relationship_type value 'paternal grandfather' which is not among the allowed options, causing a tool error.",True,,gpt-oss:120b-cloud,2.1432247161865234,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.95,
+  ""reason"": ""The assistant called 'historical_relationship_finder' with a relationship_type value 'paternal grandfather' which is not among the allowed options, causing a tool error.""
+}"
+TH_0254,TOOLHOP_df518c2e0702,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,5.0,0.86,"The assistant supplied an invalid value for the 'relationship_type' parameter ('paternal grandmother') which is not among the allowed options, causing the tool to return an error.",True,,gpt-oss:120b-cloud,3.674924850463867,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.86,
+  ""reason"": ""The assistant supplied an invalid value for the 'relationship_type' parameter ('paternal grandmother') which is not among the allowed options, causing the tool to return an error.""
+}"
+TH_0255,TOOLHOP_e076fa133a86,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Wrong Tool Selection,2.0,0.9,"The assistant chose biographical_info_retriever with an unsupported information_type 'parentage' to obtain the mother’s birth year, which is not the appropriate tool for relationship queries.",True,,gpt-oss:120b-cloud,2.3286800384521484,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant chose biographical_info_retriever with an unsupported information_type 'parentage' to obtain the mother’s birth year, which is not the appropriate tool for relationship queries.""
+}"
+TH_0256,TOOLHOP_e1a864f0b77f,2,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,3.0,0.93,"The assistant supplied an unsupported value for the 'output_format' argument ('Detailed'), causing the tool to return an error.",True,,gpt-oss:120b-cloud,1.9265573024749756,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant supplied an unsupported value for the 'output_format' argument ('Detailed'), causing the tool to return an error.""
+}"
+TH_0257,TOOLHOP_e1c1bfebab6b,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,6.0,0.96,"The date_calculator tool was called with a malformed duration argument (missing required 'unit' field), leading to a KeyError.",True,,gpt-oss:120b-cloud,2.1284189224243164,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.96,
+  ""reason"": ""The date_calculator tool was called with a malformed duration argument (missing required 'unit' field), leading to a KeyError.""
+}"
+TH_0258,TOOLHOP_e1f463f56b2a,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.9,"The assistant selected the genealogy_query tool (appropriate) but supplied unsupported arguments (e.g., 'data_source', 'figure_name'), causing immediate TypeError. This incorrect parameter usage is the earliest observable failure.",True,,gpt-oss:120b-cloud,1.9528722763061523,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant selected the genealogy_query tool (appropriate) but supplied unsupported arguments (e.g., 'data_source', 'figure_name'), causing immediate TypeError. This incorrect parameter usage is the earliest observable failure.""
+}"
+TH_0259,TOOLHOP_e30e49d63907,6,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.96,"The assistant passed an unsupported value 'paternal grandfather' for the 'relationship_type' parameter, which the tool rejects as invalid.",True,,gpt-oss:120b-cloud,1.6678321361541748,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant passed an unsupported value 'paternal grandfather' for the 'relationship_type' parameter, which the tool rejects as invalid.""
+}"
+TH_0260,TOOLHOP_e408d89ae85c,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the monarch (George V), retrieved his birth year (1865), and computed the year three years earlier (1862) without any tool misuse or errors.",True,,gpt-oss:120b-cloud,1.41324782371521,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the monarch (George V), retrieved his birth year (1865), and computed the year three years earlier (1862) without any tool misuse or errors.""
+}"
+TH_0261,TOOLHOP_e4dd8a3f00e9,6,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,8.0,0.93,"The assistant called the syllable_counter tool with a 'language' argument ('en' then 'english') that the tool does not support, causing an error. The incorrect parameter constitutes a parameter hallucination.",True,,gpt-oss:120b-cloud,2.236178398132324,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant called the syllable_counter tool with a 'language' argument ('en' then 'english') that the tool does not support, causing an error. The incorrect parameter constitutes a parameter hallucination.""
+}"
+TH_0262,TOOLHOP_e5cb675577c0,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.93,"The first tool call returned 'Genealogical information not found', and the assistant failed to recover or adjust, leading to repeated ineffective calls and ultimately insufficient information.",True,,gpt-oss:120b-cloud,2.91715669631958,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.93,
+  ""reason"": ""The first tool call returned 'Genealogical information not found', and the assistant failed to recover or adjust, leading to repeated ineffective calls and ultimately insufficient information.""
+}"
+TH_0263,TOOLHOP_e6c3dd630428,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the 2004 film, retrieved its director, extracted the first name, and accurately counted the repeated letters without any tool misuse or errors.",True,,gpt-oss:120b-cloud,2.5731542110443115,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the 2004 film, retrieved its director, extracted the first name, and accurately counted the repeated letters without any tool misuse or errors.""
+}"
+TH_0264,TOOLHOP_e6c790b5c2e4,10,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,7.0,0.97,"The assistant called biographical_info_retriever with an empty data_source dict, which is invalid per the tool specification, leading to an error at turn 7.",True,,gpt-oss:120b-cloud,2.6181838512420654,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called biographical_info_retriever with an empty data_source dict, which is invalid per the tool specification, leading to an error at turn 7.""
+}"
+TH_0265,TOOLHOP_eaa67f3a93d0,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.8,"The author_lookup tool returned an incorrect author (Carol Burnett) for the title ""One More Time"", leading the agent to base subsequent steps on wrong information.",True,,gpt-oss:120b-cloud,3.778195381164551,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.8,
+  ""reason"": ""The author_lookup tool returned an incorrect author (Carol Burnett) for the title \""One More Time\"", leading the agent to base subsequent steps on wrong information.""
+}"
+TH_0266,TOOLHOP_eadc1dd8fc27,5,COMPLETED,NATURAL_COMPLETION,False,Wrong Tool Selection,6.0,0.9,"At turn 6 the assistant calls `song_composer_identifier` to get a biography of M. B. Sreenivasan, but this tool is meant to identify a song's composer, not retrieve a person's biography, indicating an inappropriate tool choice.",True,,gpt-oss:120b-cloud,2.4243979454040527,"{
+  ""failure_type"": ""Wrong Tool Selection"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.9,
+  ""reason"": ""At turn 6 the assistant calls `song_composer_identifier` to get a biography of M. B. Sreenivasan, but this tool is meant to identify a song's composer, not retrieve a person's biography, indicating an inappropriate tool choice.""
+}"
+TH_0267,TOOLHOP_eb4ac3033e8a,10,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The first tool call uses an invalid value for the 'game_type' argument ('professional wrestling'), which the tool rejects as not among the allowed sports types.",True,,gpt-oss:120b-cloud,2.769068717956543,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The first tool call uses an invalid value for the 'game_type' argument ('professional wrestling'), which the tool rejects as not among the allowed sports types.""
+}"
+TH_0268,TOOLHOP_eb65e208b715,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,6.0,0.93,"The assistant called syllable_counter with an unsupported language value ""en"" (expected full language name), causing a tool error; this is an incorrect parameter.",True,,gpt-oss:120b-cloud,3.4159812927246094,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.93,
+  ""reason"": ""The assistant called syllable_counter with an unsupported language value \""en\"" (expected full language name), causing a tool error; this is an incorrect parameter.""
+}"
+TH_0269,TOOLHOP_ec2b67d54675,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.9,"The assistant called filmography_query_tool with an unsupported query_type value ""cast"", which is not among the allowed options, indicating an incorrect parameter.",True,,gpt-oss:120b-cloud,2.1497347354888916,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called filmography_query_tool with an unsupported query_type value \""cast\"", which is not among the allowed options, indicating an incorrect parameter.""
+}"
+TH_0270,TOOLHOP_ed2efc1c0534,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,2.0,0.96,"The assistant called genealogy_lookup with an unsupported relationship value ""paternal grandfather"", which is not in the tool's allowed list, leading to an immediate error.",True,,gpt-oss:120b-cloud,1.6449952125549316,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called genealogy_lookup with an unsupported relationship value \""paternal grandfather\"", which is not in the tool's allowed list, leading to an immediate error.""
+}"
+TH_0271,TOOLHOP_ed665fd66158,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the actress (Natalie Wood), retrieved her sibling (Lana Wood), extracted the last letter of the sibling's first name ('a'), and used the appropriate ascii_converter tool to obtain the correct ASCII code (97). No misinterpretation, tool misuse, parameter errors, or execution issues are observed.",True,,gpt-oss:120b-cloud,2.0116450786590576,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the actress (Natalie Wood), retrieved her sibling (Lana Wood), extracted the last letter of the sibling's first name ('a'), and used the appropriate ascii_converter tool to obtain the correct ASCII code (97). No misinterpretation, tool misuse, parameter errors, or execution issues are observed.""
+}"
+TH_0272,TOOLHOP_edd6ebda641b,2,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,6.0,0.75,"The assistant correctly called the appropriate tool and received 13 distinct two-letter combinations, but then reported an incorrect count of 12, indicating a downstream processing error.",True,,gpt-oss:120b-cloud,3.1983299255371094,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.75,
+  ""reason"": ""The assistant correctly called the appropriate tool and received 13 distinct two-letter combinations, but then reported an incorrect count of 12, indicating a downstream processing error.""
+}"
+TH_0273,TOOLHOP_ee44c6bcc4e0,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Intent Misunderstanding,6.0,0.9,"At turn 6 the assistant switches to querying the death date of John Annesley himself, ignoring the original request for the death date of his father, indicating a fundamental misunderstanding of the user's intent.",True,,gpt-oss:120b-cloud,2.778148651123047,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.9,
+  ""reason"": ""At turn 6 the assistant switches to querying the death date of John Annesley himself, ignoring the original request for the death date of his father, indicating a fundamental misunderstanding of the user's intent.""
+}"
+TH_0274,TOOLHOP_ef2afd226e33,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.97,"The assistant called the correct tool (historical_bio_query) but supplied an invalid value for the 'output_format' parameter ('JSON' instead of the allowed 'json'), causing the tool to return an error.",True,,gpt-oss:120b-cloud,2.2927982807159424,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called the correct tool (historical_bio_query) but supplied an invalid value for the 'output_format' parameter ('JSON' instead of the allowed 'json'), causing the tool to return an error.""
+}"
+TH_0275,TOOLHOP_efbc0848b836,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,4.0,0.9,"The assistant called family_relationship_finder with an unsupported 'data_format' value ('json'), causing the tool to error; the parameters supplied were invalid.",True,,gpt-oss:120b-cloud,2.8723790645599365,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 4,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called family_relationship_finder with an unsupported 'data_format' value ('json'), causing the tool to error; the parameters supplied were invalid.""
+}"
+TH_0276,TOOLHOP_f032e5893073,7,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.9,"The assistant called the historical_relationship_finder tool (turn 2) but the tool responded with ""Unknown"" (turn 3), indicating an execution failure of an otherwise appropriate tool.",True,,gpt-oss:120b-cloud,4.159108638763428,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called the historical_relationship_finder tool (turn 2) but the tool responded with \""Unknown\"" (turn 3), indicating an execution failure of an otherwise appropriate tool.""
+}"
+TH_0277,TOOLHOP_f04b1d726c61,10,COMPLETED_FORCED_FINALIZE,SOFT_TOOL_CALL_THRESHOLD,True,Parameter Hallucination,2.0,0.96,"The assistant called the genealogical lookup tool with unsupported arguments (e.g., 'geographical_location', 'historical_events'), causing a TypeError, indicating fabricated or incorrect parameters.",True,,gpt-oss:120b-cloud,1.7979927062988281,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant called the genealogical lookup tool with unsupported arguments (e.g., 'geographical_location', 'historical_events'), causing a TypeError, indicating fabricated or incorrect parameters.""
+}"
+TH_0278,TOOLHOP_f1c6feb7a362,10,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,9.0,0.97,"The agent called family_relationship_finder with an unsupported relationship_type value 'children', which is invalid per the tool's specification, causing an error.",True,,gpt-oss:120b-cloud,1.9332687854766846,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 9,
+  ""confidence"": 0.97,
+  ""reason"": ""The agent called family_relationship_finder with an unsupported relationship_type value 'children', which is invalid per the tool's specification, causing an error.""
+}"
+TH_0279,TOOLHOP_f1e75747bc4c,4,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,6.0,0.97,"The assistant called syllable_counter_plus with an invalid 'output_format' value ""Integer"" (should be lowercase), causing the tool to error. This is an incorrect parameter.",True,,gpt-oss:120b-cloud,1.868790864944458,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called syllable_counter_plus with an invalid 'output_format' value \""Integer\"" (should be lowercase), causing the tool to error. This is an incorrect parameter.""
+}"
+TH_0280,TOOLHOP_f333160e6b20,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.95,"The first tool call returned None (no data) and the assistant failed to handle the empty result, proceeding with further ineffective calls and ultimately ending with an unknown answer.",True,,gpt-oss:120b-cloud,2.6293530464172363,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.95,
+  ""reason"": ""The first tool call returned None (no data) and the assistant failed to handle the empty result, proceeding with further ineffective calls and ultimately ending with an unknown answer.""
+}"
+TH_0281,TOOLHOP_f3751173cf41,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Intent Misunderstanding,2.0,0.9,"The assistant immediately queried for children of 'Chian Hsiao-chang', whereas the user asked about the other child of Chian Hsiao-chang's father, indicating a fundamental misinterpretation of the task.",True,,gpt-oss:120b-cloud,3.084869384765625,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant immediately queried for children of 'Chian Hsiao-chang', whereas the user asked about the other child of Chian Hsiao-chang's father, indicating a fundamental misinterpretation of the task.""
+}"
+TH_0282,TOOLHOP_f4904ffc3864,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.86,"The first tool call omitted the required 'data_source' with a 'database_name', causing the tool to return an error about missing required parameter.",True,,gpt-oss:120b-cloud,2.750279426574707,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.86,
+  ""reason"": ""The first tool call omitted the required 'data_source' with a 'database_name', causing the tool to return an error about missing required parameter.""
+}"
+TH_0283,TOOLHOP_f5354c576bb8,5,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,8.0,0.86,"The assistant calls enhanced_alphabetical_sorter with a manually supplied list of letters representing ""Skolimowski"" despite never having obtained that name from any prior tool; the input is invented and not grounded in observed evidence.",True,,gpt-oss:120b-cloud,3.763493299484253,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 8,
+  ""confidence"": 0.86,
+  ""reason"": ""The assistant calls enhanced_alphabetical_sorter with a manually supplied list of letters representing \""Skolimowski\"" despite never having obtained that name from any prior tool; the input is invented and not grounded in observed evidence.""
+}"
+TH_0284,TOOLHOP_f53eac2e4221,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,6.0,0.86,"At turn 6 the assistant called contribution_finder with an empty 'genre' field, which the tool flagged as invalid, showing the agent supplied malformed/incorrect parameters.",True,,gpt-oss:120b-cloud,4.458115816116333,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.86,
+  ""reason"": ""At turn 6 the assistant called contribution_finder with an empty 'genre' field, which the tool flagged as invalid, showing the agent supplied malformed/incorrect parameters.""
+}"
+TH_0285,TOOLHOP_f6e1126cedeb,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.9,"The assistant called filmography_search with role='creator', which is not a supported value for the tool, resulting in an invalid role error.",True,,gpt-oss:120b-cloud,1.7391667366027832,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.9,
+  ""reason"": ""The assistant called filmography_search with role='creator', which is not a supported value for the tool, resulting in an invalid role error.""
+}"
+TH_0286,TOOLHOP_f76b2ea6b45e,3,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,2.0,0.96,"The assistant selected the appropriate biographical_info_retriever tool but supplied an unsupported 'information_type' value ('birth_date'), causing the tool to error immediately.",True,,gpt-oss:120b-cloud,2.2998547554016113,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.96,
+  ""reason"": ""The assistant selected the appropriate biographical_info_retriever tool but supplied an unsupported 'information_type' value ('birth_date'), causing the tool to error immediately.""
+}"
+TH_0287,TOOLHOP_f8c024c4ad95,6,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,10.0,0.96,"The agent called genealogy_lookup with an unsupported 'relationship' value 'parents', which is not among the allowed options, indicating an incorrect parameter.",True,,gpt-oss:120b-cloud,2.0860483646392822,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 10,
+  ""confidence"": 0.96,
+  ""reason"": ""The agent called genealogy_lookup with an unsupported 'relationship' value 'parents', which is not among the allowed options, indicating an incorrect parameter.""
+}"
+TH_0288,TOOLHOP_f8d0f85975e4,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.99,"The assistant correctly identified the director, retrieved the father, extracted the first name, and computed the correct letter count without any tool misuse or errors.",True,,gpt-oss:120b-cloud,2.184871196746826,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.99,
+  ""reason"": ""The assistant correctly identified the director, retrieved the father, extracted the first name, and computed the correct letter count without any tool misuse or errors.""
+}"
+TH_0289,TOOLHOP_f8e20fddd3e4,3,COMPLETED,NATURAL_COMPLETION,False,Parameter Hallucination,6.0,0.96,"The string_length_counter tool was called with an invalid 'ignore_position' argument [0, -1], which is malformed and caused the tool to error.",True,,gpt-oss:120b-cloud,2.2457327842712402,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 6,
+  ""confidence"": 0.96,
+  ""reason"": ""The string_length_counter tool was called with an invalid 'ignore_position' argument [0, -1], which is malformed and caused the tool to error.""
+}"
+TH_0290,TOOLHOP_f90a34bcd66e,4,COMPLETED,NATURAL_COMPLETION,False,Execution/Cascading Error,7.0,0.85,"The organization_founding_date_finder tool returned an incorrect founding year (1997) that contradicts the earlier established year (1961), leading to a wrong final difference calculation.",True,,gpt-oss:120b-cloud,3.5977985858917236,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 7,
+  ""confidence"": 0.85,
+  ""reason"": ""The organization_founding_date_finder tool returned an incorrect founding year (1997) that contradicts the earlier established year (1961), leading to a wrong final difference calculation.""
+}"
+TH_0291,TOOLHOP_fa755791d050,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,3.0,0.86,"The first tv_show_finder call used an invented actor name ""Genevieve Knight Hannelius"", causing the tool to return ""No matching TV show found""; the parameters were incorrect.",True,,gpt-oss:120b-cloud,5.859678506851196,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.86,
+  ""reason"": ""The first tv_show_finder call used an invented actor name \""Genevieve Knight Hannelius\"", causing the tool to return \""No matching TV show found\""; the parameters were incorrect.""
+}"
+TH_0292,TOOLHOP_fa988283d77c,3,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.98,"The assistant correctly identified the party, its founder, and accurately calculated the combined length of the founder's first and last name.",True,,gpt-oss:120b-cloud,2.311370372772217,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.98,
+  ""reason"": ""The assistant correctly identified the party, its founder, and accurately calculated the combined length of the founder's first and last name.""
+}"
+TH_0293,TOOLHOP_fad3ea4094a1,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Parameter Hallucination,5.0,0.97,"The assistant called biographical_data_retriever with an unsupported 'data_source' value (e.g., ""default""), resulting in an ""Invalid data source"" error, indicating fabricated or incorrect parameters.",True,,gpt-oss:120b-cloud,2.4591805934906006,"{
+  ""failure_type"": ""Parameter Hallucination"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant called biographical_data_retriever with an unsupported 'data_source' value (e.g., \""default\""), resulting in an \""Invalid data source\"" error, indicating fabricated or incorrect parameters.""
+}"
+TH_0294,TOOLHOP_fbea31c7083e,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly interpreted the task, selected appropriate tools, adjusted parameters after an initial tool error, and produced the correct combined length without any unrecoverable error.",True,,gpt-oss:120b-cloud,3.4133613109588623,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly interpreted the task, selected appropriate tools, adjusted parameters after an initial tool error, and produced the correct combined length without any unrecoverable error.""
+}"
+TH_0295,TOOLHOP_fc7a734dba51,5,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.97,"The agent selected an appropriate tool with correct parameters, but the tool returned an error (no data) at turn 3, and the agent failed to recover, leading to repeated ineffective calls.",True,,gpt-oss:120b-cloud,2.1606333255767822,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.97,
+  ""reason"": ""The agent selected an appropriate tool with correct parameters, but the tool returned an error (no data) at turn 3, and the agent failed to recover, leading to repeated ineffective calls.""
+}"
+TH_0296,TOOLHOP_fcd72fa5e790,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Intent Misunderstanding,2.0,0.97,"The assistant interpreted the request as needing the father's name, calling the biographical_query with relationship_type 'parent' instead of retrieving the father's birth date required to compute the date 8 days earlier.",True,,gpt-oss:120b-cloud,2.1964025497436523,"{
+  ""failure_type"": ""Intent Misunderstanding"",
+  ""failure_turn"": 2,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant interpreted the request as needing the father's name, calling the biographical_query with relationship_type 'parent' instead of retrieving the father's birth date required to compute the date 8 days earlier.""
+}"
+TH_0297,TOOLHOP_fe39d97644dc,4,COMPLETED_FORCED_FINALIZE,REPEATED_IDENTICAL_TOOL_RESULT,True,Execution/Cascading Error,3.0,0.96,"The first tool call (turn 3) returns an error (book not found). The assistant continues to call the same tool despite the error, showing a cascade of failed executions.",True,,gpt-oss:120b-cloud,2.1018800735473633,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 3,
+  ""confidence"": 0.96,
+  ""reason"": ""The first tool call (turn 3) returns an error (book not found). The assistant continues to call the same tool despite the error, showing a cascade of failed executions.""
+}"
+TH_0298,TOOLHOP_ff5ae4a7485c,2,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.97,"The assistant correctly identified the publisher, retrieved its founding year, and provided the reversed year as requested, with appropriate tool usage and parameters.",True,,gpt-oss:120b-cloud,1.8308396339416504,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.97,
+  ""reason"": ""The assistant correctly identified the publisher, retrieved its founding year, and provided the reversed year as requested, with appropriate tool usage and parameters.""
+}"
+TH_0299,TOOLHOP_ff6d1d2c3324,10,COMPLETED_FORCED_FINALIZE,SOFT_TOOL_CALL_THRESHOLD,True,Execution/Cascading Error,5.0,0.97,"The agent correctly identified the mother and called the appropriate historical_figure_info tool, but the tool returned an error (no data) on turn 5, leading to repeated futile calls and eventual failure.",True,,gpt-oss:120b-cloud,3.333678722381592,"{
+  ""failure_type"": ""Execution/Cascading Error"",
+  ""failure_turn"": 5,
+  ""confidence"": 0.97,
+  ""reason"": ""The agent correctly identified the mother and called the appropriate historical_figure_info tool, but the tool returned an error (no data) on turn 5, leading to repeated futile calls and eventual failure.""
+}"
+TH_0300,TOOLHOP_fffb8e85796e,4,COMPLETED,NATURAL_COMPLETION,False,No Failure,,0.98,"The assistant correctly retrieved the director, identified the father, extracted the last letter of the father's first name, and converted it to the correct binary representation without any tool misuse or errors.",True,,gpt-oss:120b-cloud,1.7641229629516602,"{
+  ""failure_type"": ""No Failure"",
+  ""failure_turn"": null,
+  ""confidence"": 0.98,
+  ""reason"": ""The assistant correctly retrieved the director, identified the father, extracted the last letter of the father's first name, and converted it to the correct binary representation without any tool misuse or errors.""
+}"

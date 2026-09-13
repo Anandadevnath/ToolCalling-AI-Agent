@@ -1,0 +1,6 @@
+GPT_Taxonomy,Intent Misunderstanding,Wrong Tool Selection,Parameter Hallucination,Execution/Cascading Error,No Failure
+Intent Misunderstanding,75,0,0,607,261
+Wrong Tool Selection,43,0,0,601,190
+Parameter Hallucination,23,0,0,553,169
+Execution/Cascading Error,37,0,0,728,162
+No Failure,59,0,0,219,273

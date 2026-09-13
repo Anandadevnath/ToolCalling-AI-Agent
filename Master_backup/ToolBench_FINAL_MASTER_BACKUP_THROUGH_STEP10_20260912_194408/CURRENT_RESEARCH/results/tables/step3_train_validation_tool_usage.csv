@@ -1,0 +1,5 @@
+has_function_call,trajectory_count,percentage,dataset
+True,119387,79.97682161351045,train
+False,29890,20.023178386489544,train
+True,29830,79.93033226152197,validation
+False,7490,20.069667738478028,validation

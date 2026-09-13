@@ -1,0 +1,28 @@
+role_sequence,trajectory_count,percentage
+system -> user -> assistant,22257,14.909865551960449
+system -> user -> assistant -> function -> assistant,17186,11.512825150559028
+system -> user -> assistant -> function -> assistant -> function -> assistant,14932,10.00288055092211
+system -> user -> assistant -> function -> assistant -> function -> user -> assistant,10058,6.737809575487182
+system -> user -> assistant -> function -> user -> assistant,9978,6.684217930424646
+system -> user -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant,9146,6.126864821774285
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,7952,5.327009519215954
+system -> user -> user -> assistant,7633,5.113312834529097
+system -> user -> assistant -> function -> user -> assistant -> function -> assistant,6877,4.606871788688144
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant,6806,4.559309203695143
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant,6513,4.36302980365361
+system -> user -> user -> assistant -> function -> assistant,4576,3.065442097576988
+system -> user -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant,3947,2.644077788272808
+system -> user -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant,3938,2.638048728203273
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,3857,2.5837871875774567
+system -> user -> user -> assistant -> function -> assistant -> function -> assistant,2977,1.9942790918895743
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant,2782,1.8636494570496458
+system -> user -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,1623,1.0872404992061737
+system -> user -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,1532,1.0262800029475405
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,1373,0.9197666083857527
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant,756,0.5064410458409534
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant,737,0.4937130301386014
+system -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> user -> assistant,556,0.3724619331846165
+system -> user -> assistant -> function -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,548,0.367102768678363
+system -> user -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,419,0.28068624101502576
+system -> user -> assistant -> function -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,238,0.15943514406104087
+system -> user -> user -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant -> function -> assistant,80,0.05359164506253475

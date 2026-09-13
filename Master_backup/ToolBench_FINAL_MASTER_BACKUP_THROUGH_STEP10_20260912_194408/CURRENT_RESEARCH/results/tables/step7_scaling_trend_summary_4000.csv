@@ -1,0 +1,2 @@
+lowest_depth,lowest_depth_failure_rate,highest_depth,highest_depth_failure_rate,absolute_change,relative_change,best_model_AIC,best_model_BIC,bootstrap_iterations,ci_level
+2,0.5598802395209581,14,0.9411764705882353,0.38129623106727717,0.6810317709971687,Power Law,Power Law,5000,0.95

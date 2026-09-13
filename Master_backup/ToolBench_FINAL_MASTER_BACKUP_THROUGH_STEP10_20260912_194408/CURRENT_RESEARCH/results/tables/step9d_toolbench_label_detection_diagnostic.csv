@@ -1,0 +1,12 @@
+column,unique_values,taxonomy_coverage,recognized_classes
+llm_failure_type,5,1.0,Execution/Cascading Error | Intent Misunderstanding | No Failure | Parameter Hallucination | Wrong Tool Selection
+role_sequence,27,0.0,
+llm_failure_turn,13,0.0,
+annotation_valid,1,0.0,
+repair_used,2,0.0,
+repair_attempts,2,0.0,
+requested_model,1,0.0,
+actual_model,1,0.0,
+step_depth,13,0.0,
+depth_bucket,12,0.0,
+num_turns,12,0.0,

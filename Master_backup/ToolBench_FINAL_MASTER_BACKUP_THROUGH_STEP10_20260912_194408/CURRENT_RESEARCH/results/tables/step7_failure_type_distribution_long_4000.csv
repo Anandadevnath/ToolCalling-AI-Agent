@@ -1,0 +1,66 @@
+step_depth,failure_type,count,percent_within_depth
+2,Intent Misunderstanding,90,26.94610778443114
+2,Wrong Tool Selection,49,14.67065868263473
+2,Parameter Hallucination,47,14.071856287425149
+2,Execution/Cascading Error,1,0.29940119760479045
+2,No Failure,147,44.01197604790419
+3,Intent Misunderstanding,123,36.82634730538922
+3,Wrong Tool Selection,89,26.646706586826348
+3,Parameter Hallucination,50,14.97005988023952
+3,Execution/Cascading Error,6,1.7964071856287425
+3,No Failure,66,19.760479041916167
+4,Intent Misunderstanding,52,15.568862275449103
+4,Wrong Tool Selection,56,16.766467065868262
+4,Parameter Hallucination,55,16.46706586826347
+4,Execution/Cascading Error,54,16.16766467065868
+4,No Failure,117,35.029940119760475
+5,Intent Misunderstanding,90,26.94610778443114
+5,Wrong Tool Selection,95,28.443113772455092
+5,Parameter Hallucination,48,14.37125748502994
+5,Execution/Cascading Error,76,22.75449101796407
+5,No Failure,25,7.48502994011976
+6,Intent Misunderstanding,71,21.32132132132132
+6,Wrong Tool Selection,54,16.216216216216218
+6,Parameter Hallucination,70,21.02102102102102
+6,Execution/Cascading Error,73,21.92192192192192
+6,No Failure,65,19.51951951951952
+7,Intent Misunderstanding,71,21.32132132132132
+7,Wrong Tool Selection,63,18.91891891891892
+7,Parameter Hallucination,52,15.615615615615615
+7,Execution/Cascading Error,121,36.33633633633634
+7,No Failure,26,7.807807807807808
+8,Intent Misunderstanding,80,24.024024024024023
+8,Wrong Tool Selection,68,20.42042042042042
+8,Parameter Hallucination,50,15.015015015015015
+8,Execution/Cascading Error,79,23.723723723723726
+8,No Failure,56,16.816816816816818
+9,Intent Misunderstanding,77,23.123123123123122
+9,Wrong Tool Selection,77,23.123123123123122
+9,Parameter Hallucination,65,19.51951951951952
+9,Execution/Cascading Error,105,31.53153153153153
+9,No Failure,9,2.7027027027027026
+10,Intent Misunderstanding,73,21.92192192192192
+10,Wrong Tool Selection,68,20.42042042042042
+10,Parameter Hallucination,77,23.123123123123122
+10,Execution/Cascading Error,99,29.72972972972973
+10,No Failure,16,4.804804804804805
+11,Intent Misunderstanding,74,22.22222222222222
+11,Wrong Tool Selection,70,21.02102102102102
+11,Parameter Hallucination,71,21.32132132132132
+11,Execution/Cascading Error,112,33.633633633633636
+11,No Failure,6,1.8018018018018018
+12,Intent Misunderstanding,77,23.123123123123122
+12,Wrong Tool Selection,71,21.32132132132132
+12,Parameter Hallucination,77,23.123123123123122
+12,Execution/Cascading Error,97,29.129129129129126
+12,No Failure,11,3.303303303303303
+13,Intent Misunderstanding,63,19.936708860759495
+13,Wrong Tool Selection,69,21.835443037974684
+13,Parameter Hallucination,78,24.68354430379747
+13,Execution/Cascading Error,100,31.645569620253166
+13,No Failure,6,1.89873417721519
+14,Intent Misunderstanding,2,11.76470588235294
+14,Wrong Tool Selection,5,29.411764705882355
+14,Parameter Hallucination,5,29.411764705882355
+14,Execution/Cascading Error,4,23.52941176470588
+14,No Failure,1,5.88235294117647

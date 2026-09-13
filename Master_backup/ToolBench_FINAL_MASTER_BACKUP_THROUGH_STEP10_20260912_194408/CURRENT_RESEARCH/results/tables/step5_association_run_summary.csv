@@ -1,0 +1,2 @@
+trajectories,transaction_items,min_support,min_confidence,min_lift,frequent_itemsets,raw_rules,failure_rules_before_lift,failure_rules_after_lift,sequence_mean,sequence_median,sequence_max
+2105,22,0.03,0.2,1.1,1083,7166,411,240,7.253681710213777,7.0,13

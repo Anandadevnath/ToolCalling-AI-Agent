@@ -1,0 +1,6 @@
+failure_type,rule_count
+Intent Misunderstanding,26
+Wrong Tool Selection,6
+Parameter Hallucination,34
+Execution/Cascading Error,119
+No Failure,55

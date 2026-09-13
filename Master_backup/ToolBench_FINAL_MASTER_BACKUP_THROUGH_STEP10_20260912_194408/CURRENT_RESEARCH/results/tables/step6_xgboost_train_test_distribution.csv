@@ -1,0 +1,6 @@
+class_id,failure_type,train_count,test_count
+0,Intent Misunderstanding,427,107
+1,Wrong Tool Selection,287,72
+2,Parameter Hallucination,290,72
+3,Execution/Cascading Error,449,112
+4,No Failure,231,58

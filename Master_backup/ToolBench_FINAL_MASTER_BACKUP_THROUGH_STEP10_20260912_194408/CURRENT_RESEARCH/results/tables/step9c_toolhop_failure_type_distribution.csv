@@ -1,0 +1,6 @@
+failure_type,count,percent
+Intent Misunderstanding,14,4.666666666666667
+Wrong Tool Selection,9,3.0
+Parameter Hallucination,143,47.66666666666667
+Execution/Cascading Error,55,18.333333333333332
+No Failure,79,26.333333333333332

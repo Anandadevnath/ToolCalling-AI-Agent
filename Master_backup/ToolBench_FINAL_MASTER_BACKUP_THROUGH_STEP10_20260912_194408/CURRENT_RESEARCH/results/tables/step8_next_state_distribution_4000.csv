@@ -1,0 +1,6 @@
+state,train_next_state_count,train_next_state_percent
+Intent Misunderstanding,2342,12.524733942991602
+Wrong Tool Selection,2638,14.107706294454248
+Parameter Hallucination,2715,14.519493021017166
+Execution/Cascading Error,3285,17.56778437349591
+No Failure,7719,41.28028236804107

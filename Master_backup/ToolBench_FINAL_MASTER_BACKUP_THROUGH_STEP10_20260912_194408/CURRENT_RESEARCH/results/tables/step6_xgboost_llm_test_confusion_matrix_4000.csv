@@ -1,0 +1,6 @@
+,Intent Misunderstanding,Wrong Tool Selection,Parameter Hallucination,Execution/Cascading Error,No Failure
+Intent Misunderstanding,30,17,10,29,46
+Wrong Tool Selection,26,19,20,33,20
+Parameter Hallucination,11,8,23,43,20
+Execution/Cascading Error,5,12,14,77,17
+No Failure,12,3,3,7,50

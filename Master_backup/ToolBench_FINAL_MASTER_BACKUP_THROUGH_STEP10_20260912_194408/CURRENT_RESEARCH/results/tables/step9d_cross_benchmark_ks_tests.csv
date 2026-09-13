@@ -1,0 +1,4 @@
+comparison,toolbench_n,toolhop_n,KS_statistic,p_value
+All trajectory depth distributions,4000,300,0.39275,3.344550964338072e-39
+Failure trajectory depth distributions,3449,221,0.39953347353616825,2.2951109299655212e-30
+No-Failure trajectory depth distributions,551,79,0.3177421948586,1.0668290726664967e-06

@@ -1,0 +1,2 @@
+labels_source,raw_conversation_source,final_labels,raw_matches,merged_rows,unique_ids,valid_sequences,sequence_success_percent,mean_sequence_length,median_sequence_length,max_sequence_length,overall_min_support,overall_support_percent,min_pattern_length,max_pattern_length,patterns_saved,seed
+/kaggle/working/toolbench_research/data/processed/step4_gptoss120b_target4000_FINAL.parquet,/kaggle/input/datasets/anandadevnath/new-backup/Master_backup/dataset/toolbench_train_80.parquet,4000,4000,4000,4000,4000,100.0,7.2485,7.0,13,95,2.375,2,6,200,42

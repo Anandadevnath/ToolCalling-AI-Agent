@@ -1,0 +1,2 @@
+benchmark,step,annotation_model,source_trajectory_rows,usable_trajectory_rows,valid_annotation_rows,failure_rows,no_failure_rows,failure_rate,mean_annotation_confidence,natural_generation_rows,forced_finalize_rows,gold_answer_shown_to_judge,gold_subtask_shown_to_judge,toolbench_validation_used
+ToolHop,9C_failure_annotation,gpt-oss:120b-cloud,300,300,300,221,79,0.7366666666666667,0.9386666666666668,169,131,False,False,False

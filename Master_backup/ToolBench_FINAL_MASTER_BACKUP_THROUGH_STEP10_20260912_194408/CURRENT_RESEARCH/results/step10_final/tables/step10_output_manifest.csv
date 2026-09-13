@@ -1,0 +1,16 @@
+file,exists,size_bytes
+/kaggle/working/toolbench_research/results/step10_final/tables/step10_master_findings.csv,True,816
+/kaggle/working/toolbench_research/results/step10_final/tables/step10_failure_taxonomy_distribution.csv,True,200
+/kaggle/working/toolbench_research/results/step10_final/tables/step10_scaling_summary.csv,True,309
+/kaggle/working/toolbench_research/results/step10_final/tables/step10_failure_propagation_model_comparison.csv,True,217
+/kaggle/working/toolbench_research/results/step10_final/tables/step10_cross_benchmark_summary.csv,True,966
+/kaggle/working/toolbench_research/results/step10_final/tables/step10_figure_index.csv,True,1072
+/kaggle/working/toolbench_research/results/step10_final/STEP10_FINAL_RESEARCH_SUMMARY.md,True,3016
+/kaggle/working/toolbench_research/results/step10_final/figures/figure_01_failure_taxonomy_distribution.png,True,216821
+/kaggle/working/toolbench_research/results/step10_final/figures/figure_02_toolbench_failure_vs_depth.png,True,135696
+/kaggle/working/toolbench_research/results/step10_final/figures/figure_03_toolbench_scaling_model_comparison.png,True,88751
+/kaggle/working/toolbench_research/results/step10_final/figures/figure_04_markov_vs_lstm.png,True,105647
+/kaggle/working/toolbench_research/results/step10_final/figures/figure_05_toolbench_vs_toolhop_failure_scaling.png,True,174035
+/kaggle/working/toolbench_research/results/step10_final/figures/figure_06_cross_benchmark_model_aic.png,True,96225
+/kaggle/working/toolbench_research/results/step10_final/tables/step10_human_llm_agreement.csv,True,82
+/kaggle/working/toolbench_research/results/step10_final/figures/figure_07_human_vs_llm_failure_distribution.png,True,188741

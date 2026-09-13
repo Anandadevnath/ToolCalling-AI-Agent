@@ -1,0 +1,2 @@
+trajectories,primary_k,best_k_by_silhouette,tfidf_features,svd_components,svd_explained_variance,silhouette_k5,ari_vs_topdown,nmi_vs_topdown,cluster_purity,mapped_cluster_agreement
+2105,5,9,20000,100,0.3108279450504672,0.042845637105202235,0.022996856722408344,0.03593193155219458,0.30783847980997625,0.30783847980997625

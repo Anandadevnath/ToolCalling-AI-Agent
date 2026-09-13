@@ -1,0 +1,6 @@
+metric,value
+training_trajectories,149277
+turn_count_mismatches,0
+trajectories_with_empty_turns,0
+total_empty_turns,0
+unique_role_sequences,27

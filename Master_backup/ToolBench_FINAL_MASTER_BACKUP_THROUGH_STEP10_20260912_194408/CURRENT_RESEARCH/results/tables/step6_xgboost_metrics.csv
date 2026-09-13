@@ -1,0 +1,2 @@
+total_labeled_trajectories,train_rows,test_rows,test_size,random_state,num_features,accuracy,balanced_accuracy,macro_precision,macro_recall,macro_f1,weighted_precision,weighted_recall,weighted_f1,multiclass_roc_auc_ovr_macro,log_loss,xgboost_version,device_used,best_iteration
+2105,1684,421,0.2,42,23,0.3491686460807601,0.3465852938016973,0.3195171123133834,0.3465852938016973,0.32481542901542904,0.33362708465143537,0.3491686460807601,0.33322565057006864,0.6582529533090199,1.4598012355121142,3.2.0,cuda,98

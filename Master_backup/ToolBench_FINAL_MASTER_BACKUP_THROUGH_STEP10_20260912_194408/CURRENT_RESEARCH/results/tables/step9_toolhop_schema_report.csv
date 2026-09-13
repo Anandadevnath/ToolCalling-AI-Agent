@@ -1,0 +1,15 @@
+column,dtype,non_missing,missing,unique_values
+id,int64,995,0,995
+question,object,995,0,995
+answer,object,995,0,535
+sub_task,object,995,0,995
+tools,object,995,0,995
+functions,object,995,0,995
+domain,object,995,0,88
+answer_type,object,995,0,6
+previous_answer_type,object,995,0,5
+toolhop_id,object,995,0,995
+query_text,object,995,0,995
+query_characters,int64,995,0,145
+query_words,int64,995,0,33
+benchmark_depth,float64,0,995,0

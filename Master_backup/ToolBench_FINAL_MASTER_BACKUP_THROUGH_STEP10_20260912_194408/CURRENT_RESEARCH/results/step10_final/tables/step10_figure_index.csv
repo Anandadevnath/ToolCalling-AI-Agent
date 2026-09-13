@@ -1,0 +1,8 @@
+figure,title,file
+Figure 1,Failure Taxonomy Distribution,/kaggle/working/toolbench_research/results/step10_final/figures/figure_01_failure_taxonomy_distribution.png
+Figure 2,ToolBench Failure Rate vs Depth,/kaggle/working/toolbench_research/results/step10_final/figures/figure_02_toolbench_failure_vs_depth.png
+Figure 3,ToolBench Scaling Model Comparison,/kaggle/working/toolbench_research/results/step10_final/figures/figure_03_toolbench_scaling_model_comparison.png
+Figure 4,Markov vs LSTM Failure Propagation,/kaggle/working/toolbench_research/results/step10_final/figures/figure_04_markov_vs_lstm.png
+Figure 5,ToolBench vs ToolHop Failure Scaling,/kaggle/working/toolbench_research/results/step10_final/figures/figure_05_toolbench_vs_toolhop_failure_scaling.png
+Figure 6,Cross-Benchmark Scaling Model AIC,/kaggle/working/toolbench_research/results/step10_final/figures/figure_06_cross_benchmark_model_aic.png
+Figure 7,Human vs GPT-OSS Failure Distribution,/kaggle/working/toolbench_research/results/step10_final/figures/figure_07_human_vs_llm_failure_distribution.png

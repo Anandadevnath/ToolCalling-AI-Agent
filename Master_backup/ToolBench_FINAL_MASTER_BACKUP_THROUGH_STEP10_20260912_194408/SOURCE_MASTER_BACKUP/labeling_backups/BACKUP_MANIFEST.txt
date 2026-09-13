@@ -1,0 +1,23 @@
+TOOLBENCH RESEARCH — KAGGLE MIGRATION BACKUP
+======================================================================
+
+Step 4 project status:
+- GPT-OSS annotations: 3000/3000
+- Genuine human annotations: 40/300
+- Human vs GPT-OSS raw agreement: 57.50%
+- Cohen's Kappa: 0.3907
+- Kappa interpretation: Fair agreement
+- Remaining 260 intended for unsupervised embedding + K-Means
+
+IMPORTANT:
+Do not rerun GPT-OSS 3000 annotation.
+Do not overwrite the 40 genuine human labels.
+
+FILES INCLUDED:
+- step4_gptoss120b_SAFE_resume_checkpoint.csv
+- step4_human_40_manual_BACKUP.csv
+- step4_human_gold_BLIND.csv
+- step4_human_vs_gptoss_validation.csv
+- step4_kmeans_assisted_labels_40human.csv
+- step4_kmeans_assisted_labels_40human.parquet
+- step4_llm_annotations_gptoss120b.parquet
